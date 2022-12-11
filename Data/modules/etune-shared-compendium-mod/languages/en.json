@@ -1,0 +1,7 @@
+{
+    "EtuneSharedCompendium.ControlTitle": "Etune Shared Compendium Control",
+    "EtuneSharedCompendium.Upload": "Upload changes to Etune Shared Compendium",
+    "EtuneSharedCompendium.Download": "Download changes from Etune Shared Compendium",
+    "EtuneSharedCompendium.NotificationPush": "Uploading changes, don't push the button several times.",
+    "EtuneSharedCompendium.NotificationPull": "Downloading changes, don't push the button several times."
+}

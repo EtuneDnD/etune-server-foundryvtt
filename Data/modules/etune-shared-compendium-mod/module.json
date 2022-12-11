@@ -1,6 +1,6 @@
 {
-  "name": "etune-shared-compendium",
-  "title": "Etune Shared Compendium",
+  "name": "etune-shared-compendium-mod",
+  "title": "Etune Shared Compendium Mod",
   "description": "Etune Shared Compendium across worlds and FoundryVTT instances thx to GitHub",
   "authors": [
     {
@@ -10,6 +10,11 @@
     }
   ],
   "version": "1.0.0",
+  "compatibility": {
+    "minimum": 10,
+    "verified": 10,
+    "maximum": 10
+  },
   "scripts": [
     "scripts/lib/lib.js"
   ],
@@ -25,7 +30,7 @@
       "name": "actors",
       "label": "Etune actors",
       "path": "etune-shared-compendium-foundry/actors.db",
-      "module": "etune-shared-compendium",
+      "module": "etune-shared-compendium-mod",
       "entity": "Actor",
       "system": "dnd5e"
     }

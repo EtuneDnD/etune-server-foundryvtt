@@ -1,0 +1,28 @@
+{
+  "name": "etune-automations-mod",
+  "title": "Etune Automations Mod",
+  "description": "Etune Shared Compendium across worlds and FoundryVTT instances thx to GitHub",
+  "authors": [
+    {
+      "name": "Etune",
+      "url": "https://github.com/AlbertoEE/foundry-todos-module",
+      "discord": "https://discord.gg/X3WCR8dAyC"
+    }
+  ],
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": 10,
+    "verified": 10,
+    "maximum": 10
+  },
+  "scripts": [
+    "scripts/lib/lib.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ]
+}
