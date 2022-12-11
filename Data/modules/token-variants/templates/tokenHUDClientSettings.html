@@ -1,0 +1,43 @@
+<form>
+  <div class="form-group">
+    <label>{{localize "token-variants.settings.token-hud.window.enable-token-hud.Name"}}</label>
+    <div class="form-fields">
+      <input type="checkbox" name="enableSideMenu" data-dtype="Boolean" {{#if enableSideMenu}}checked{{/if}}>
+    </div>
+    <p class="notes">
+      {{localize "token-variants.settings.token-hud.window.enable-token-hud.Hint"}}
+    </p>
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "token-variants.settings.token-hud.window.display-as-image.Name"}}</label>
+    <div class="form-fields">
+      <input type="checkbox" name="displayAsImage" data-dtype="Boolean" {{#if displayAsImage}}checked{{/if}}>
+    </div>
+    <p class="notes">
+      {{localize "token-variants.settings.token-hud.window.display-as-image.Hint"}}
+    </p>
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "token-variants.settings.token-hud.window.image-opacity.Name"}}</label>
+    <div class="form-fields">
+      <input
+        type="range"
+        name="imageOpacity"
+        data-dtype="Number"
+        value="{{imageOpacity}}"
+        min="0"
+        max="100"
+        step="1"
+      />
+    </div>
+    <p class="notes">{{localize "token-variants.settings.token-hud.window.image-opacity.Hint"}}</p>
+  </div>
+
+  <div class="button-container">
+    <button type="submit">
+      <i class="far fa-save"></i>{{localize "token-variants.common.apply"}}
+    </button>
+  </div>
+</form>

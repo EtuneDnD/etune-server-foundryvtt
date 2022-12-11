@@ -1,0 +1,31 @@
+{
+  "MonksSceneNavigation.RemoveNav": "Remove Navigation",
+
+  "MonksSceneNavigation.click-to-view.name": "Click to View",
+  "MonksSceneNavigation.click-to-view.hint": "Click to view a scene rather than configure it.",
+  "MonksSceneNavigation.scene-indicator.name": "Scene Icons",
+  "MonksSceneNavigation.scene-indicator.hint": "Add Icons to the Scene Item to show if it's active or if permissions have changed.",
+  "MonksSceneNavigation.folder-position.name": "Scene folders position",
+  "MonksSceneNavigation.folder-position.hint": "Put the Scene folder at the start of the list, or at the back",
+  "MonksSceneNavigation.display-background.name": "Display background",
+  "MonksSceneNavigation.display-background.hint": "Display a background behind the scene buttons",
+  "MonksSceneNavigation.player-folders.name": "Show folders for players",
+  "MonksSceneNavigation.player-folders.hint": "Usually the number of scenes are small for the player so it's displayed without the folder structure.  Check this if you'd like the players to see the folder structure.",
+  "MonksSceneNavigation.modify-scene-bar.name": "Modify Scene Bar",
+  "MonksSceneNavigation.modify-scene-bar.hint": "Modify the Scene bar with Scene Navigation changes",
+  "MonksSceneNavigation.quick-navigation.name": "Quick Navigation toggle",
+  "MonksSceneNavigation.quick-navigation.hint": "Always show the compas icon so that you can click that to quickly change navigability.",
+  "MonksSceneNavigation.doubleclick-activate.name": "Double-click Activate",
+  "MonksSceneNavigation.doubleclick-activate.hint": "Double-click on a scene to activate it",
+  "MonksSceneNavigation.minimize-combat.name": "Minimize during combat",
+  "MonksSceneNavigation.minimize-combat.hint": "Minimize the scene navigation when combat starts, maximize it when combat ends",
+  "MonksSceneNavigation.minimize-activate.name": "Minimize on Activate",
+  "MonksSceneNavigation.minimize-activate.hint": "Minimize the scene navigation when you activate a scene",
+  "MonksSceneNavigation.display-realname.name": "Display Real Name",
+  "MonksSceneNavigation.display-realname.hint": "Display the real scene name for the GM instead of the navigation name",
+  "MonksSceneNavigation.smaller-directory.name": "Smaller Directory list",
+  "MonksSceneNavigation.smaller-directory.hint": "Display the directory scene entries in smaller format",
+
+  "MonksSceneNavigation.folder-position.front": "Front",
+  "MonksSceneNavigation.folder-position.back": "Back"
+}

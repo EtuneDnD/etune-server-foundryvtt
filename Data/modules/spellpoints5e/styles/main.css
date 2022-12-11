@@ -1,0 +1,76 @@
+.dnd5e.sheet .sheet-header .attribute.spellpoints .attributable {
+    position: absolute !important;
+}
+
+.dnd5e.sheet .sheet-header .attribute .attributable .tooltip thead tr th:first-child,
+.dnd5e.sheet .sheet-header .attribute .attributable .tooltip tbody tr td:first-child {
+    min-width: 1em !important;
+    max-width: 5em !important;
+    white-space: nowrap !important;
+}
+
+.dnd5e.sheet .sheet-header .attribute.spellpoints .attribute-max {
+    padding: 1px 7px !important;
+}
+
+/* TODO: use points-variant for more stuff */
+.dnd5e.sheet .spellbook-header .item-name h3.points-variant ,
+.dnd5e.sheet .spellbook-header .item-name h4.points-variant {
+    flex: none !important;
+}
+
+.dnd5e.sheet.actor .spellbook-header .item-name .spell-points {
+    flex: 1 1 auto !important;
+    text-align: right !important;
+    border-right: 1px solid #c9c7b8 !important;
+    padding: 5px 5px !important;
+}
+.dnd5e.sheet.actor .spellbook-header .item-name .spell-uses {
+    text-align: left !important;
+    flex: 1 1 auto;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #7a7971;
+}
+.dnd5e.sheet.actor .spellbook-header .item-name .spell-uses input {
+    display: inline;
+    max-width: 20px;
+}
+.dnd5e.sheet.actor .spellbook-header .item-name .spell-uses .sep {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* for tidySheet5e... TODO: maybe add it programmatically */
+.tidy5e.sheet .spellbook-header .spell-level-slots h3.points-variant ,
+.tidy5e.sheet .spellbook-header .spell-level-slots h4.points-variant {
+    flex: none !important;
+    white-space: nowrap !important;
+}
+
+.tidy5e.sheet.actor .spellbook-header .spell-level-slots .spell-points {
+    flex: 1 1 auto !important;
+    text-align: right !important;
+    border-right: 1px solid #c9c7b8 !important;
+    padding: 0 5px 0 5px !important;
+    white-space: nowrap !important;
+}
+.tidy5e.sheet.actor .spellbook-header .spell-level-slots .spell-uses {
+    text-align: left !important;
+    flex: 1 1 auto !important;
+    padding: 0 0 0 5px !important;
+    font-size: 12px !important;
+    color: #7a7971 !important;
+    white-space: nowrap !important;
+}
+.tidy5e.sheet.actor .spellbook-header .spell-level-slots .spell-uses input {
+    display: inline !important;
+    max-width: 20px !important;
+    max-height: 13px !important;
+    white-space: nowrap !important;
+}
+.tidy5e.sheet.actor .spellbook-header .spell-level-slots .spell-uses .sep {
+    font-size: 13px !important;
+    font-weight: normal !important;
+    white-space: nowrap !important;
+}

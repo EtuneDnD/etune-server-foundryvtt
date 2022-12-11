@@ -1,0 +1,33 @@
+<li class="attribute {{#if asResource }}resource {{/if}}spellpoints">
+    <h4 class="attribute-name box-title"> {{ spellPointsNameText }}</h4>
+    <div class="attribute-value multiple attributable">
+        <input name="{{ resourcePath }}.points.value" type="text" value="{{ currentSpellpoints }}" placeholder="10" data-dtype="Number"> <!-- title="${currentSpellPointsTooltip}" -->
+        <span class="sep"> / </span>
+        <span class="attribute-max" style="padding: 1px 7px !important;" title="{{ maxSpellPointsTooltip }}"> {{ maxSpellPoints }} </span>
+        {{#unless asResource }}
+        <div class="property-attribution tooltip">
+            <table>
+                <thead>Spellcasting Levels: </thead>
+                <tbody>
+                {{#each allCastingLevels}}
+                    <tbody><tr>
+                        <td class="attribution-value {{#if @first }} mode-5 {{ else }} mode-2 {{/if}}">
+                            {{ this }}
+                        </td>
+                        <td class="attribution-label">{{ @key }}</td>
+                    </tr>
+                {{/each }}
+                <tr class="total">
+                    <td class="attribution-value">{{ combinedLevel }}</td>
+                    <td class="attribution-label">Total</td>
+                </tr>
+                </tbody></table>
+        </div>
+        {{/unless}}
+    </div>
+    <!-- Temp and Max override
+    <footer class="attribute-footer">
+        <input name="${VSpellPoints.resourcesPath()}.points.temp" type="text" class="temphp" placeholder="+${spellPointsTempText}" value="${tempPoints}" data-dtype="Number">
+        <input name="${VSpellPoints.resourcesPath()}.points.addMax" type="text" class="temphp" placeholder="+${spellPointsTempMaxText}" value="${tempMax}" data-dtype="Number">
+    </footer> -->
+</li>

@@ -1,0 +1,20 @@
+{
+    "name": "fail-save-lmrtfy-midi",
+    "title": "fail-save-lmrtfy-midi",
+    "description": "Adds a button to LMRTFY prompts to intentionally fail ability checks, saving throws, and skill checks. Useful in combination with automated Midi workflows.",
+    "author": "enso#0361",
+    "version": "1.0.1",
+    "minimumCoreVersion": "9",
+    "compatibleCoreVersion": "9",
+    "system": [
+        "dnd5e"
+    ],
+    "esmodules": [
+        "./scripts/main.js"
+    ],
+    "styles": [],
+    "languages": [],
+    "url": "https://github.com/jessev14/fail-save-lmrtfy-midi",
+    "manifest": "https://github.com/jessev14/fail-save-lmrtfy-midi/releases/latest/download/module.json",
+    "download": "https://github.com/jessev14/fail-save-lmrtfy-midi/releases/download/1.0.1/module.zip"
+}

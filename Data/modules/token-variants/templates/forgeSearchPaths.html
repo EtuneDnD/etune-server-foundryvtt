@@ -1,0 +1,60 @@
+<form>
+  <section>
+    <h2 class="module-header">The Forge</h2>
+    <div class="form-group">
+      <label>API Secret Key</label>
+      <div class="form-fields">
+        <input type="text" name="apiKey" value="{{apiKey}}" data-dtype="String" />
+      </div>
+      <p class="notes">{{localize "token-variants.settings.forge-search-paths.window.Hint"}}</p>
+    </div>
+
+    <ol class="token-variant-table">
+      <li class="table-row table-header flexrow">
+        <div class="path-image">
+          <a class="create-path" title="Add new path"><i class="fas fa-plus"></i></a>
+        </div>
+        <div class="path-source"><label>Source</label></div>
+        <div class="path-text"><label>Path</label></div>
+        <div class="path-category"><label>Category</label></div>
+        <div class="path-cache"><label>Cache</label></div>
+        <div class="path-share"><label>Share</label></div>
+        <div class="path-controls"></div>
+      </li>
+
+      {{#each paths as |path index|}}
+      <li class="table-row flexrow" data-index="{{index}}">
+        <div class="path-image source-icon">
+          <a><i class="fas fa-hammer"></i></a>
+        </div>
+        <div class="path-source">
+          <input class="searchSource" type="text" value="forgevtt" placeholder="forgevtt" disabled/>
+          <input type="text"  name="paths.{{index}}.source" value="forgevtt" hidden/>
+        </div>
+        <div class="path-text">
+          <input type="text" name="paths.{{index}}.text" value="{{path.text}}" placeholder="Path to folder"/>
+        </div>
+        <div class="path-category">
+          <a class="select-category" title="Select image categories/filters"><i class="fas fa-swatchbook"></i></a>
+          <input type="hidden" name="paths.{{index}}.types" value="{{path.types}}">
+        </div>
+        <div class="path-cache">
+          <input type="checkbox" name="paths.{{index}}.cache" data-dtype="Boolean" {{#if path.cache}}checked{{/if}}/>
+        </div>
+        <div class="path-share">
+          <input type="checkbox" name="paths.{{index}}.share" data-dtype="Boolean" {{#if path.share}}checked{{/if}}/>
+        </div>
+        <div class="path-controls">
+          <a class="delete-path" title="Delete path"><i class="fas fa-trash"></i></a>
+        </div>
+      </li>
+      {{/each}}
+    </ol>
+  </section>
+  <footer class="sheet-footer flexrow">
+    <p class="notes">
+      <b>Format:</b><br />
+      Assets Library/token_art/dragons <b>-></b> token_art/dragons
+    </p>
+  </footer>
+</form>

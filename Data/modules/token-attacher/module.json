@@ -1,0 +1,61 @@
+{
+	"id": "token-attacher",
+	"title": "Token Attacher",
+	"description": "Attach anything(even tokens) to tokens, so that they move when the token moves and rotate/move when the token rotates. Create prefabs and many more features, see the github readme for more details.",
+	"version": "4.5.11",
+	"compatibility" :{
+		"minimum": 10,	
+		"verified": "10.288",
+		"maximum": 10	
+	},
+	"authors": [
+		{
+			"name": "KayelGee",
+			"url": "https://github.com/KayelGee",
+			"discord": "KayelGee#5241"
+		}
+	],
+	"relationships":{
+		"requires": [{
+      "id": "lib-wrapper",
+      "type": "module",
+      "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json"
+    }]
+	},
+	"esmodules": [
+		"scripts/token-attacher.js"
+	],
+	"styles": [
+		"./css/token-attacher.css"],
+	"packs": [
+      {
+          "name": "example-macros",
+          "label": "(TA)Example Macros",
+          "path": "packs/example-macros.db",
+          "type": "Macro",
+          "package": "token-attacher"
+      }
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "languages/en.json"
+		},
+		{
+			"lang": "ko",
+			"name": "Korean",
+			"path": "languages/ko.json"
+		},
+		{
+			"lang": "ja",
+			"name": "日本語",
+			"path": "languages/ja.json"
+    }
+	],
+	"socket": true,
+	"url": "https://github.com/KayelGee/token-attacher",
+  "manifest": "https://raw.githubusercontent.com/KayelGee/token-attacher/master/module.json",
+  "download": "https://github.com/KayelGee/token-attacher/releases/download/v4.5.11/v4.5.11.zip",
+  "readme": "https://github.com/KayelGee/token-attacher/blob/v4.5.11/README.md"
+}

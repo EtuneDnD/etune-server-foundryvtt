@@ -1,0 +1,6 @@
+{
+  "times-up.Debug.Name": "Debug",
+  "times-up.Debug.Hint": "Choose the amount of debug to display",
+  "times-up.DisablePassiveEffects.Name": "Disable Passive Effects on expiry",
+  "times-up.DisablePassiveEffects.Hint": "Instead of deleting passive effects (created when adding an item/feature/spell) on expiry mark them as disabled. When this option is active, enabling a passive effect will reset its start time/round/turn"
+}

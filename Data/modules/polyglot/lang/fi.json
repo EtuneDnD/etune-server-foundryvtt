@@ -1,0 +1,99 @@
+{
+	"POLYGLOT": {
+		"LanguageSettings": "Kielten asetukset",
+		"ChatSettings": "Keskusteluasetukset",
+		"CustomLanguages.title": "Mukautetut kielet",
+		"ComprehendLanguages.title": "Kieltenymmärrys-loitsu",
+		"ComprehendLanguages.hint": "Aseta kieli, jonka puhuja ymmärtää kaikkia muita kieliä, mutta jota ei voi puhua eikä kirjoittaa.",
+		"directory": {
+			"name": "Mukautettu fonttikansio",
+			".hint": "Valitse fonttitiedostoja sisältävä kansio, joka ei ole modules-kansiossa."
+		},
+		"source": {
+			"s3": "S3",
+			"forgevtt": "Forge"
+		},
+		"Truespeech.title": "Kielten lahja -loitsu",
+		"JournalHighlight.title": "Muistiinpanon korostuksen peitto (%)",
+		"JournalHighlight.hint": "Määrittää muistiinpanon fonttien päälle tulevan korostuksen peiton.",
+		"logographicalFontToggle.title": "Logografiset fontit",
+		"logographicalFontToggle.hint": "Puolittaa logografisia fontteja (esim. japanilaiset, kiinalaiset merkit) käyttävien lauseiden pituuden.",
+		"DefaultLanguage.title": "Oletuskieli",
+		"DefaultLanguage.hint": "Valittavan oletuskielen nimi. Pidä tyhjänä, jos haluat käyttää järjestelmän oletusarvoa.",
+		"ReplaceLanguages.title": "Korvaa järjestelmän kielet",
+		"ScrambleGM.title": "PJ näkee sekoitetut viestit",
+		"ScrambleGM.hint": "Älä käännä tekstiä PJ:lle (katso maapallon väristä, mitä pelinappula ymmärtää). Vaatii uudelleenlataamisen.",
+		"Generic": {
+			"Language": "Kieli"
+		},
+		"enableAllFonts": {
+			"choices": {
+				"0": "Ei mitään",
+				"2": "Ytimen ylimääräiset fontit",
+				"3": "Molemmat",
+				"1": "Polyglot fontit"
+			},
+			"title": "Lisää fontit fontti- ja kieliasetuksiin"
+		},
+		"RandomizeRunesOptions": {
+			"a": "Oletus",
+			"b": "Uniikit fraasit",
+			"c": "Ei mitään ⚠️"
+		},
+		"ExportFonts.title": "Lisää Polyglotin fontit ytimeen",
+		"ExportFonts.hint": "Lisää Polyglotin fontit ytimen Ylimääräiset fontit -valikkoon.",
+		"DisplayTranslated.title": "Näytön käännökset",
+		"DefaultAlphabet": "Oletusaakkosto",
+		"FontSettings": "Fonttien asetukset",
+		"Languages.title": "Kielet",
+		"Font": "Fontti",
+		"Fonts": "Fontit",
+		"FontSize": "Fonttikoko (%)",
+		"CustomLanguages.hint": "Määritä pilkuilla erotettu luettelo mukautetuista kielistä, jotka lisätään järjestelmään.",
+		"Truespeech.hint": "Aseta kieli, jonka puhuja ymmärtää kaikkia puhuttuja kieliä (ei voi lukea muistiinpanoja) ja jota kaikki olennot ymmärtävät.",
+		"UESRPG.Language": "Kieli",
+		"ReplaceLanguages.hint": "Korvaa järjestelmän oletuskielet mukauttamallasi kielillä. Luettelon ensimmäisestä kielestä tulee uusi oletuskieli.",
+		"RandomizeRunes.hint": "Tämä määrittää, minkä tyyppistä satunnaislukugeneraattoria käytetään fraasin luomiseen. ⚠️ Vaihtoehto \"Ei mitään\" tukee vain aakkosnumeerisia merkkejä (ei aksentteja).",
+		"SWADE": {
+			"LanguageSkills": "Kieli"
+		},
+		"WFRP4E": {
+			"LanguageSkills": "Kieli"
+		},
+		"DND5E": {
+			"SpecialLanguages.title": "Korvaa erikoiset kielet",
+			"SpecialLanguages.hint": "Kielen nimi, joka korvaa \"kielet\" kuten \"kaikki kielet, jotka se osasi elämässään\"."
+		},
+		"COC7": {
+			"LanguageSpec": "Kieli",
+			"LanguageOwn": "Kieli",
+			"LanguageAny": "Kieli",
+			"LanguageOther": "Kieli"
+		},
+		"DisplayTranslated.hint": "Näytä alkuperäinen teksti ja käännös sen alapuolella keskusteluikkunassa käännetyille kielille.",
+		"HideTranslation.title": "Piilota ilmaisimet pelaajilta",
+		"AllowOOCOptions": {
+			"b": "Vain PJ",
+			"c": "Vain pelaajat",
+			"d": "Ei mitään"
+		},
+		"LanguageProvider": {
+			"choices": {
+				"module": "[Moduuli] {name}",
+				"native": "Yleinen",
+				"system": "[Järjestelmä] {name}"
+			},
+			"name": "Kieliasetusten tarjoaja"
+		},
+		"LanguageRegex": {
+			"title": "Kielen RegEx"
+		},
+		"LanguageLabel": "Kieli",
+		"AlphabetLabel": "Aakkosto",
+		"LatinAlphabet": "Latinalaiset aakkoset",
+		"HideTranslation.hint": "Piilottaa maapallon ja Käännetty kielestä -tekstin pelaajille lähetetyistä keskusteluviesteistä. Täydellinen silloin, kun et halua näyttää pelaajille, mitä kieltä puhut. Vaatii uudelleenlatauksen.",
+		"Languages.hint": "Muuttaa kielissä käytettävää aakkostoa.",
+		"TranslatedFrom": "Käännetty kielestä ",
+		"Translation": "Käännös"
+	}
+}

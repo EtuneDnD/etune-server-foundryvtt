@@ -1,0 +1,25 @@
+{
+  "title": "Etune Example World",
+  "version": "1.0.0",
+  "packs": [
+    {
+      "type": "Macro",
+      "label": "World Scripter Macros",
+      "name": "macros",
+      "path": "packs/macros.db",
+      "private": false,
+      "system": "dnd5e",
+      "flags": {}
+    }
+  ],
+  "system": "dnd5e",
+  "coreVersion": "10.290",
+  "resetKeys": false,
+  "safeMode": false,
+  "systemVersion": "2.0.3",
+  "id": "etune-example-world",
+  "compatibility": {
+    "verified": "10.290",
+    "minimum": "10"
+  }
+}

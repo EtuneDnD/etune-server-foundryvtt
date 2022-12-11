@@ -1,0 +1,94 @@
+<form style="background: inherit;">
+  <div class="token-variants-banner">
+    {{#if displayMode}}
+      {{#if image1}}
+      <div class="token-variants-portrait-token form-group {{#if item}}item{{/if}}">
+        {{#if (eq displayMode 4)}}
+        <div>Current<img class="image active" src="{{image1}}" title="{{image1}}" alt="" width="80" height="80"></img></div>
+        {{else}}
+        <div>Portrait<img class="image {{#if (eq displayMode 1)}}active{{else if (eq displayMode 3)}}active{{/if}}" src="{{image1}}" title="{{image1}}" alt="" width="80" height="80"></img></div>
+        <div>Token<img class="image {{#if (eq displayMode 2)}}active{{else if (eq displayMode 3)}}active{{/if}}" src="{{image2}}" title="{{image2}}" alt="" width="80" height="80"></img></div>
+        {{/if}}
+      </div>
+      {{/if}}
+      {{#if item}}
+      <div class="item-description">
+        <h2>Description</h2>
+        <div class="item-description-content">{{{description}}}</div>
+      </div>
+      {{/if}}
+    {{/if}}
+    <div class="form-group">
+      <input type="text" id="custom-art-search" name="search" value="{{search}}" />
+      <button type="button" id="token-variant-art-clear-queue" {{#unless queue}}hidden{{/unless}}>Clear Queue ({{queue}})</button>
+    </div>
+    {{#if displaySlider}}
+    <div class="form-group">
+      <input
+        type="range"
+        name="fuzzyThreshold"
+        data-dtype="Number"
+        value="{{fuzzyThreshold}}"
+        min="0"
+        max="100"
+        step="1"
+      />
+      <span class="token-variants-range-value">{{fuzzyThreshold}}%</span>
+    </div>
+    {{/if}}
+    {{#if multipleSelection}}
+    <div class="form-group">
+      <button type="button" id="token-variant-art-return-selected">Return selected</button>
+      <button type="button" id="token-variant-art-return-all">Return All</button>
+    </div>
+    {{/if}}
+</div>
+<div class="search-content">
+  {{#if allImages}} {{#each allImages as |search index|}}
+  <div>
+    <h2><b>{{search.[0]}}</b></h2>
+  </div>
+  <hr />
+  <div class="token-variants-grid">
+    {{#each search.[1] as |image|}}
+    <div>
+      <span
+        class="token-variants-grid-box {{#unless image.type}}token-variants-unrecognised{{/unless}}"
+        title="{{image.title}}"
+        data-name="{{image.path}}"
+        data-filename="{{image.name}}">
+      </span>
+      {{#if image.img}}
+      <img class="token-variants-grid-image" src="{{image.path}}" />
+      {{/if}} {{#if image.vid}}
+      <video
+        class="token-variants-grid-image"
+        src="{{image.path}}"
+        alt="{{image.name}}"
+        {{#if ../autoplay}}
+        autoplay
+        {{/if}}
+        loop
+        muted>
+      </video>
+      {{#unless ../autoplay}}
+      <i class="fas fa-play fa-lg"></i>
+      {{/unless}}
+      {{/if}} {{#unless image.type}}
+      <p class="token-variants-grid-image" alt="{{image.name}}">{{image.path}}</p>
+      {{/unless}}
+      <i class="fas fa-cog fa-lg {{#if image.hasConfig}}active{{/if}}"></i>
+      <p>{{{image.label}}}</p>
+    </div>
+    {{/each}}
+  </div>
+  {{/each}} {{else}}
+
+  <div>
+    <p>{{localize "token-variants.windows.art-select.no-art-found"}}: <b>{{search}}</b></p>
+  </div>
+
+</div>
+
+  {{/if}}
+</form>

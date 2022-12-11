@@ -1,0 +1,50 @@
+<div id="navigation" class="flexcol {{cssClass}}">
+    {{#each groups}}
+    <nav class="app monks-scene-navigation flexrow {{this.folder.css}}" data-folder-id="{{this.folder._id}}">
+        {{#unless folder._id}}
+        <a id="nav-toggle" class="nav-item">
+            <i class="fas fa-caret-{{#if collapsed}}down{{else}}up{{/if}}"></i>
+        </a>
+        {{/unless}}
+
+        <ol class="scene-list" style="border-color: {{this.folder.color}};">
+            {{#each this.folder.scenes}}
+            {{#if this.directory}}
+            {{#if this.visible}}
+            <li class="folder nav-item {{this.css}}" data-folder-id="{{this._id}}">
+                <a class="scene-name folder-name" style="border-color: {{this.color}};" {{#if @root.isGM}}title="{{this.tooltip}}"{{/if}}>
+                    <i class="fas {{#if this.navopen}}fa-folder-open{{else}}fa-folder{{/if}}"></i>
+                   {{this.name}}
+                </a>
+                {{#unless this.navopen}}
+                <ul class="scene-players flexrow">
+                    {{#if this.active}}
+                    <li class="active-indicator"><i class="fas fa-bullseye"></i></li>
+                    {{/if}}
+                    {{#each this.users as |user i|}}
+                    <li class="scene-player"><div style="background-color: {{user.color}};">{{user.letter}}</div></li>
+                    {{/each}}
+                </ul>
+                {{/unless}}
+            </li>
+            {{/if}}
+            {{else}}
+            <li class="scene nav-item {{this.css}}" data-scene-id="{{this._id}}" {{#if @root.isGM}}title="{{this.tooltip}}"{{/if}}>
+                <a class="scene-name">
+                    {{this.name}}
+                </a>
+                <ul class="scene-players flexrow">
+                    {{#if this.active}}
+                    <li class="active-indicator"><i class="fas fa-bullseye"></i></li>
+                    {{/if}}
+                    {{#each this.users as |user i|}}
+                    <li class="scene-player"><div style="background-color: {{user.color}};">{{user.letter}}</div></li>
+                    {{/each}}
+                </ul>
+            </li>
+            {{/if}}
+            {{/each}}
+        </ol>
+    </nav>
+    {{/each}}
+</div>

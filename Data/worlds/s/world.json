@@ -1,0 +1,12 @@
+{
+  "title": "s",
+  "id": "s",
+  "system": "pf2e",
+  "description": "<p></p>",
+  "coreVersion": "10.290",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  },
+  "systemVersion": "4.4.2"
+}

@@ -1,0 +1,60 @@
+<form>
+  <div class="tab token-variants-permissions">
+    
+    <header class="table-header flexrow">
+      <label class="index">Flag</label>
+      <label>Value</label>
+      <label>Set Flag</label>
+    </header>
+  
+    <ul class="permissions-list">
+      {{#unless tile}}
+      <li class="permission form-group">
+        <label class="index">Randomize</label>
+        <div class="form-fields">
+          <input class="flag" type="checkbox" name="randomize" {{#if randomize}}checked{{/if}} {{#unless randomizeSetFlag}}disabled{{/unless}}/>
+          <input class="controlFlag" type="checkbox" {{#if randomizeSetFlag}}checked{{/if}} />
+        </div>
+        <p class="hint">Enable or disable randomization for this actor/token.</p>
+      </li>
+  
+      <li class="permission form-group">
+        <label class="index">Pop-ups</label>
+        <div class="form-fields">
+          <input class="flag" type="checkbox" name="popups" {{#if popups}}checked{{/if}} {{#unless popupsSetFlag}}disabled{{/unless}}/>
+          <input class="controlFlag" type="checkbox" {{#if popupsSetFlag}}checked{{/if}}/>
+        </div>
+        <p class="hint">Enable or disable pop-ups for this actor/token.</p>
+      </li>
+
+      <li class="permission form-group">
+        <label class="index">Disable Name Search</label>
+        <div class="form-fields">
+          <input class="flag" type="checkbox" name="disableNameSearch" {{#if disableNameSearch}}checked{{/if}} {{#unless disableNameSearchSetFlag}}disabled{{/unless}}/>
+          <input class="controlFlag" type="checkbox" {{#if disableNameSearchSetFlag}}checked{{/if}}/>
+        </div>
+        <p class="hint">Disable Token HUD name search</p>
+      </li>
+
+      {{/unless}}
+
+      <li class="permission form-group">
+        <label class="index">Image Directory</label>
+        <div class="form-fields">
+          <input class="flag" type="text" name="directory" value="{{directory}}" {{#unless directorySetFlag}}disabled{{/unless}} hidden/>
+          <input class="flag" type="text" name="directorySource" value="{{directorySource}}" {{#unless directorySetFlag}}disabled{{/unless}} hidden/>
+          <button type="button" class="directory-fp" title="Directory: {{directory}}">
+            <i class="fas fa-file-import fa-fw"></i>
+          </button>
+
+          <input class="controlFlag" type="checkbox" {{#if directorySetFlag}}checked{{/if}}/>
+        </div>
+        <p class="hint">Assign image directory to be included in the HUD</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="button-container">
+    <button type="submit"><i class="far fa-save"></i>{{localize "token-variants.common.apply"}}</button>
+  </div>
+</form>

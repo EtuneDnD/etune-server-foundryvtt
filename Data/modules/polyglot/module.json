@@ -1,0 +1,91 @@
+{
+    "title": "Polyglot",
+    "description": "Talk to others using a language you can speak and scrambles text you can't understand, in several fantasy scripts.",
+    "version": "1.8.5",
+    "authors": [
+        {
+            "name": "Matheus Clemente",
+            "discord": "mclemente#5524",
+            "ko-fi": "mclemente"
+        },
+        {
+            "name": "KaKaRoTo"
+        },
+        {
+            "name": "elizeuangelo"
+        }
+    ],
+    "esmodules": [
+        "polyglot.js"
+    ],
+    "styles": [
+        "css/polyglot.css",
+        "css/fonts.css"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        },
+        {
+            "lang": "pt-BR",
+            "name": "Português (Brasil)",
+            "path": "lang/pt-BR.json"
+        },
+        {
+            "lang": "es",
+            "name": "Español",
+            "path": "lang/es.json"
+        },
+        {
+            "lang": "ko",
+            "name": "Korean",
+            "path": "lang/ko.json"
+        },
+        {
+            "lang": "fr",
+            "name": "French",
+            "path": "lang/fr.json"
+        },
+        {
+            "lang": "cs",
+            "name": "Česky",
+            "path": "lang/cs.json"
+        },
+        {
+            "lang": "ja",
+            "name": "日本語",
+            "path": "lang/ja.json"
+        },
+        {
+            "lang": "pl",
+            "name": "Polski",
+            "path": "lang/pl.json"
+        },
+        {
+            "lang": "it",
+            "name": "Italiano",
+            "path": "lang/it.json"
+        },
+        {
+            "lang": "fi",
+            "name": "Suomi",
+            "path": "lang/fi.json"
+        },
+        {
+            "lang": "sv",
+            "name": "Svenska",
+            "path": "lang/sv.json"
+        }
+    ],
+    "url": "https://github.com/mclemente/fvtt-module-polyglot",
+    "manifest": "https://github.com/mclemente/fvtt-module-polyglot/releases/latest/download/module.json",
+    "download": "https://github.com/mclemente/fvtt-module-polyglot/releases/download/1.8.5/module.zip",
+    "bugs": "https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot/issues",
+    "id": "polyglot",
+    "compatibility": {
+        "minimum": "10",
+        "verified": "10"
+    }
+}

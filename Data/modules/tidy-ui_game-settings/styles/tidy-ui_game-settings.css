@@ -1,0 +1,330 @@
+/* ----------------------------------------- */
+/*  Settings                                 */
+/* ----------------------------------------- */
+
+#settings.settings-sidebar div {
+  margin: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#settings.settings-sidebar button {
+  margin: 0;
+  text-align: left;
+  padding: 0 8px;
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  align-items: baseline;
+  cursor: pointer;
+}
+
+#settings .ms2t-switch-container h2 {
+  margin: 6px 0 0 0;
+}
+
+#settings .game-system {
+  margin-bottom: 0.5rem;
+}
+
+#settings .game-system h4 {
+  font-size: 0.7rem;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0.25rem 0;
+}
+
+#settings #combat-utility-belt h4 {
+  margin-top: 1rem;
+}
+
+#settings button[data-action="logout"],
+#settings button[data-action="players"] {
+  margin-top: 1rem;
+}
+
+/* Game Settings Window */
+
+/* ----------------------------------------- */
+/*  Module Management                        */
+/* ----------------------------------------- */
+
+#module-management {
+  min-height: 100vh;
+}
+
+#module-management .window-content form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#module-management .notes {
+  flex: 0 0 1px;
+  min-height: auto;
+}
+
+#module-management .package-title {
+  line-height: 20px;
+  margin: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+#module-management .package-list .package-title {
+  overflow: visible;
+  height: auto;
+  align-items: flex-start;
+  margin-right: 8px;
+}
+
+#module-management input.active {
+  position: relative;
+  margin-right: 8px;
+  top: 0;
+}
+
+#module-management input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  transition: border 0.3s ease, background 0.3s ease;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+#module-management input[type="checkbox"]:hover {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+#module-management input[type="checkbox"]:checked {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+#module-management input[type="checkbox"]:checked::after {
+  content: "";
+  display: block;
+  background: url(../img/check-solid.svg) center no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#module-management .package-list {
+  padding: 0.25rem 0rem 0.25rem 0rem;
+  height: auto;
+  max-height: 100%;
+  margin: 0.5rem 0 0.5rem 0;
+  border-top: 1px solid #7a7971;
+  border-bottom: 1px solid #7a7971;
+}
+
+#module-management .package-list .package {
+  position: relative;
+  padding: 0.25rem 0 0 0;
+  border-top: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#module-management .package-list .package-metadata {
+  list-style: none;
+  margin-top: 4px;
+}
+
+#module-management .package-list .package:last-child {
+  border: none;
+}
+
+#module-management .package-list .package-description {
+  margin: 0 0 0.5rem 28px;
+}
+
+#module-management .package-list .package .tag {
+  font-size: 10px;
+  margin: 0 0.25rem 0.25rem 0;
+  padding: 1px 4px 0;
+  line-height: 16px;
+}
+
+#module-management button {
+  cursor: pointer;
+}
+
+#module-management .mass-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+#module-management .disable-all-modules {
+  background: rgba(255, 0, 0, 0.3);
+  border-width: 2px groove rgba(255, 0, 0, 0.5);
+  margin-right: 0.25rem;
+  flex: 1;
+}
+
+#module-management .enable-all-modules {
+  background: rgba(0, 255, 0, 0.3);
+  border-width: 2px groove rgba(0, 255, 0, 0.5);
+  margin-left: 0.25rem;
+  flex: 1;
+}
+
+/* ----------------------------------------- */
+/*  Module Export/Import                     */
+/* ----------------------------------------- */
+
+#module-management .enhanced-module-management {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  flex: 0 0 1px;
+}
+
+#module-management .enhanced-module-management button {
+  margin: 0 0.25rem;
+}
+
+#module-management .enhanced-module-management button:first-child {
+  margin-left: 0;
+}
+
+#module-management .enhanced-module-management button:last-child {
+  margin-right: 0;
+}
+
+#module-management .enhanced-module-management .modules-export,
+#module-management .enhanced-module-management .modules-import {
+  flex: 0 0 50px;
+}
+
+#module-management #importExportModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  display: none;
+  z-index: 1000;
+}
+
+#module-management .warning {
+  background: rgba(255, 120, 0, 1);
+  padding: 8px;
+  font-size: 11px;
+  margin: 8px 0;
+  color: #fff;
+  border-radius: 3px;
+}
+
+#module-management .warning span {
+  font-weight: 600;
+}
+
+#module-management #importExportModal .modal-wrap {
+  height: 100%;
+  background: #444;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#module-management #importExportModal .modal-wrap #close {
+  background: #efefef;
+  color: #444;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#module-management #importExportModal .modal-wrap #exportToast {
+  position: absolute;
+  background: rgba(100, 255, 150, 0.95);
+  color: #121212;
+  border-radius: 3px 3px 0 0;
+  top: 1rem;
+  right: 1rem;
+  bottom: 56px;
+  left: 1rem;
+  padding: 1rem;
+  z-index: 10;
+  display: none;
+}
+
+#module-management #importExportModal .modal-wrap #exportToast p {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#module-management #importExportModal #modalIO {
+  background: #efefef;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) inset;
+  resize: none;
+}
+
+#module-management #importExportModal #modalIO:focus {
+  outline: none;
+}
+
+#module-management #importExportModal .export-options,
+#module-management #importExportModal .import-options {
+  display: flex;
+  margin-left: -1px;
+}
+#module-management #importExportModal button {
+  background: rgba(0, 255, 0, 0.4);
+  border: none;
+  border-radius: 1px solid #333;
+  color: #efefef;
+  border-radius: 0 0 3px 3px;
+  flex: 1;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  margin-right: 1px;
+  padding: 0;
+  display: none;
+}
+
+#module-management #importExportModal button:hover {
+  background: rgba(0, 255, 0, 0.3);
+  box-shadow: none;
+}
+
+#module-management #importExportModal.export .export-options button,
+#module-management #importExportModal.import .import-options button {
+  display: block;
+}

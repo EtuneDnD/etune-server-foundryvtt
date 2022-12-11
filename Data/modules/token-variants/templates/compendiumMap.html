@@ -1,0 +1,133 @@
+<form>
+  <div class="form-group">
+    <p class="notes">Supported compendiums: <b>{{supportedPacks}}</b></p>
+    <label>Compendium</label>
+    <div class="form-fields">
+      <select name="compendium">
+        {{#each compendiums as |comp|}}
+        <option value="{{comp.id}}" {{#if (eq ../compendium comp.id)}}selected="selected"{{/if}}>{{comp.title}}</option>
+        {{/each}}
+      </select>
+    </div>
+    <p class="notes">
+      {{localize "token-variants.settings.compendium-mapper.window.compendium-select"}}
+    </p>
+  </div>
+
+  <hr/>
+
+  <div class="form-group">
+    <label>Override Image Category</label>
+    <input class="token-variants-override-category" type="checkbox" name="overrideCategory" data-dtype="Boolean" {{#if overrideCategory}}checked{{/if}} />
+    <p class="notes">Change the default image category used by the module for this compendium type.</p>
+  </div>
+
+  <div class="form-group">
+    <label>Category</label>
+    <div class="form-fields">
+      <select class="token-variants-category" name="category">
+        {{#each categories as |cat|}}
+        <option value="{{cat}}" {{#if (eq ../category cat)}}selected="selected"{{/if}}>{{cat}}</option>
+        {{/each}}
+      </select>
+    </div>
+  </div>
+
+  <hr/>
+
+  <div class="form-group token-specific">
+    <label>{{localize "token-variants.settings.compendium-mapper.window.diff-images"}}</label>
+    <input class="token-variants-diff-images" type="checkbox" name="diffImages" data-dtype="Boolean"
+    {{#if diffImages}}checked{{/if}} />
+  </div>
+
+  <div class="form-group token-specific">
+    <label
+      >&nbsp;&nbsp;&nbsp;&nbsp; {{localize
+      "token-variants.settings.compendium-mapper.window.ignore-token"}}</label
+    >
+    <input class="token-variants-tp-ignore" type="checkbox" name="ignoreToken" data-dtype="Boolean"
+    {{#if ignoreToken}}checked{{/if}} {{#unless diffImages}}disabled{{/unless}}/>
+  </div>
+
+  <div class="form-group token-specific">
+    <label
+      >&nbsp;&nbsp;&nbsp;&nbsp; {{localize
+      "token-variants.settings.compendium-mapper.window.ignore-portrait"}}</label
+    >
+    <input class="token-variants-tp-ignore" type="checkbox" name="ignorePortrait"
+    data-dtype="Boolean" {{#if ignorePortrait}}checked{{/if}} {{#unless
+    diffImages}}disabled{{/unless}}/>
+  </div>
+
+  <hr />
+
+  <div class="form-group">
+    <label>{{localize "token-variants.settings.compendium-mapper.window.missing-only"}}</label>
+    <input type="checkbox" name="missingOnly" data-dtype="Boolean" {{#if missingOnly}}checked{{/if}} />
+  </div>
+
+  <div class="form-group">
+    <label>Missing Images</label>
+    <button type="button" class="token-variants-missing-images">
+      <i class="fas fa-exchange-alt"></i>
+    </button>
+    <p class="notes">
+      Define additional images that are to be considered as "missing"
+    </p>
+  </div>
+
+  <hr />
+
+  <div class="form-group">
+    <label>{{localize "token-variants.settings.compendium-mapper.window.show-images"}}</label>
+    <input type="checkbox" name="showImages" data-dtype="Boolean" {{#if showImages}}checked{{/if}} />
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "token-variants.settings.compendium-mapper.window.cache"}}</label>
+    <input type="checkbox" name="cache" data-dtype="Boolean" {{#if cache}}checked{{/if}} />
+  </div>
+
+  <hr />
+
+  <div class="form-group">
+    <label>{{localize "token-variants.settings.algorithm.Name"}}</label>
+    <button type="button" class="token-variants-search-options">
+      <i class="fas fa-exchange-alt"></i>
+    </button>
+    <p class="notes">
+      {{localize "token-variants.settings.algorithm.Hint"}}
+    </p>
+  </div>
+
+  <h2>{{localize "token-variants.common.automation"}}</h2>
+
+  <div class="form-group">
+    <label>{{localize "token-variants.settings.compendium-mapper.window.auto-apply"}}</label>
+    <input
+      class="token-variants-auto-apply"
+      type="checkbox"
+      name="autoApply"
+      data-dtype="Boolean"
+    />
+  </div>
+
+  <div class="form-group">
+    &nbsp;&nbsp;
+    <label>{{localize "token-variants.settings.compendium-mapper.window.auto-art-select"}}</label>
+    <input class="token-variants-auto-art-select" type="checkbox" name="autoDisplayArtSelect"
+    data-dtype="Boolean" disabled {{#if autoDisplayArtSelect}}checked{{/if}}/>
+  </div>
+
+  <div class="form-group token-specific">
+    <label>{{localize "token-variants.settings.compendium-mapper.window.sync-images"}}</label>
+    <input type="checkbox" name="syncImages" data-dtype="Boolean" />
+  </div>
+
+  <footer class="sheet-footer flexrow">
+    <button type="submit">
+      <i class="fas fa-cogs"></i>{{localize "token-variants.common.start"}}
+    </button>
+  </footer>
+</form>

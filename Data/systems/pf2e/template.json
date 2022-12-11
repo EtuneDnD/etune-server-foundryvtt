@@ -1,0 +1,1220 @@
+{
+    "Actor": {
+        "types": [
+            "character",
+            "npc",
+            "hazard",
+            "loot",
+            "familiar",
+            "vehicle"
+        ],
+        "templates": {
+            "common": {
+                "attributes": {
+                    "hp": {
+                        "value": 0,
+                        "temp": 0
+                    },
+                    "initiative": {
+                        "ability": "perception"
+                    },
+                    "speed": {
+                        "value": 25,
+                        "otherSpeeds": []
+                    }
+                },
+                "details": {
+                    "alignment": {
+                        "value": "N"
+                    },
+                    "level": {
+                        "value": 1
+                    }
+                },
+                "traits": {
+                    "value": [],
+                    "senses": [],
+                    "languages": {
+                        "value": [],
+                        "selected": [],
+                        "custom": ""
+                    },
+                    "di": {
+                        "value": [],
+                        "custom": ""
+                    },
+                    "dr": [],
+                    "dv": []
+                },
+                "resources": {},
+                "schema": {
+                    "version": null,
+                    "lastMigration": null
+                }
+            }
+        },
+        "character": {
+            "templates": [
+                "common"
+            ],
+            "abilities": {},
+            "saves": {},
+            "attributes": {
+                "bonusLimitBulk": 0,
+                "bonusEncumbranceBulk": 0,
+                "sp": {
+                    "value": 0,
+                    "max": 0,
+                    "details": ""
+                },
+                "resolve": {
+                    "value": 0,
+                    "max": 0
+                }
+            },
+            "details": {
+                "biography": {
+                    "appearance": "",
+                    "backstory": "",
+                    "birthPlace": "",
+                    "attitude": "",
+                    "beliefs": "",
+                    "likes": "",
+                    "dislikes": "",
+                    "catchphrases": "",
+                    "campaignNotes": "",
+                    "allies": "",
+                    "enemies": "",
+                    "organaizations": ""
+                },
+                "keyability": {
+                    "value": "str"
+                },
+                "xp": {
+                    "value": 0,
+                    "min": 0,
+                    "max": 1000,
+                    "pct": 0
+                },
+                "age": {
+                    "value": ""
+                },
+                "height": {
+                    "value": ""
+                },
+                "weight": {
+                    "value": ""
+                },
+                "gender": {
+                    "value": ""
+                },
+                "ethnicity": {
+                    "value": ""
+                },
+                "nationality": {
+                    "value": ""
+                }
+            },
+            "skills": {
+                "acr": {
+                    "rank": 0
+                },
+                "arc": {
+                    "rank": 0
+                },
+                "ath": {
+                    "rank": 0
+                },
+                "cra": {
+                    "rank": 0
+                },
+                "dec": {
+                    "rank": 0
+                },
+                "dip": {
+                    "rank": 0
+                },
+                "itm": {
+                    "rank": 0
+                },
+                "med": {
+                    "rank": 0
+                },
+                "nat": {
+                    "rank": 0
+                },
+                "occ": {
+                    "rank": 0
+                },
+                "prf": {
+                    "rank": 0
+                },
+                "rel": {
+                    "rank": 0
+                },
+                "soc": {
+                    "rank": 0
+                },
+                "ste": {
+                    "rank": 0
+                },
+                "sur": {
+                    "rank": 0
+                },
+                "thi": {
+                    "rank": 0
+                }
+            },
+            "martial": {},
+            "crafting": {
+                "formulas": []
+            },
+            "resources": {
+                "heroPoints": {
+                    "value": 1,
+                    "max": 3
+                }
+            },
+            "pfs": {
+                "playerNumber": null,
+                "characterNumber": null,
+                "levelBump": false,
+                "currentFaction": "EA",
+                "school": null,
+                "reputation": {
+                    "EA": null,
+                    "GA": null,
+                    "HH": null,
+                    "VS": null,
+                    "RO": null,
+                    "VW": null
+                }
+            }
+        },
+        "npc": {
+            "templates": [
+                "common"
+            ],
+            "abilities": {
+                "str": {
+                    "mod": 0
+                },
+                "dex": {
+                    "mod": 0
+                },
+                "con": {
+                    "mod": 0
+                },
+                "int": {
+                    "mod": 0
+                },
+                "wis": {
+                    "mod": 0
+                },
+                "cha": {
+                    "mod": 0
+                }
+            },
+            "attributes": {
+                "ac": {
+                    "value": 10,
+                    "details": ""
+                },
+                "hp": {
+                    "value": 10,
+                    "max": 10,
+                    "details": ""
+                },
+                "perception": {
+                    "value": 0
+                },
+                "allSaves": {
+                    "value": ""
+                }
+            },
+            "saves": {
+                "fortitude": {
+                    "value": 0,
+                    "saveDetail": ""
+                },
+                "reflex": {
+                    "value": 0,
+                    "saveDetail": ""
+                },
+                "will": {
+                    "value": 0,
+                    "saveDetail": ""
+                }
+            },
+            "traits": {
+                "rarity": "common",
+                "size": {
+                    "value": "med"
+                }
+            },
+            "details": {
+                "source": {
+                    "value": ""
+                },
+                "creatureType": "",
+                "blurb": "",
+                "publicNotes": "",
+                "privateNotes": ""
+            }
+        },
+        "hazard": {
+            "templates": [],
+            "source": {
+                "value": ""
+            },
+            "creatureType": "",
+            "saves": {
+                "fortitude": {
+                    "value": 0,
+                    "saveDetail": ""
+                },
+                "reflex": {
+                    "value": 0,
+                    "saveDetail": ""
+                },
+                "will": {
+                    "value": 0,
+                    "saveDetail": ""
+                }
+            },
+            "attributes": {
+                "ac": {
+                    "value": 0
+                },
+                "hp": {
+                    "value": 0,
+                    "max": 0,
+                    "temp": 0,
+                    "details": ""
+                },
+                "hardness": 0,
+                "stealth": {
+                    "value": 0,
+                    "details": ""
+                },
+                "emitsSound": "encounter"
+            },
+            "details": {
+                "isComplex": false,
+                "level": {
+                    "value": 1
+                },
+                "disable": "",
+                "description": "",
+                "reset": "",
+                "routine": ""
+            },
+            "statusEffects": [],
+            "traits": {
+                "value": [],
+                "rarity": "common",
+                "size": {
+                    "value": "med"
+                },
+                "di": {
+                    "custom": "",
+                    "value": [],
+                    "selected": {}
+                },
+                "dr": [],
+                "dv": []
+            },
+            "schema": {
+                "version": null,
+                "lastMigration": null
+            }
+        },
+        "loot": {
+            "templates": [],
+            "attributes": {},
+            "details": {
+                "description": {
+                    "value": ""
+                },
+                "level": {
+                    "value": 0
+                }
+            },
+            "traits": {
+                "value": [],
+                "rarity": "common",
+                "size": {
+                    "value": "med"
+                },
+                "di": {
+                    "custom": "",
+                    "value": [],
+                    "selected": {}
+                },
+                "dr": [],
+                "dv": []
+            },
+            "lootSheetType": "Loot",
+            "hiddenWhenEmpty": false,
+            "schema": {
+                "version": null,
+                "lastMigration": null
+            }
+        },
+        "familiar": {
+            "templates": [],
+            "master": {
+                "id": null,
+                "ability": null
+            },
+            "attributes": {
+                "hp": {
+                    "value": 5,
+                    "temp": 0
+                }
+            },
+            "details": {
+                "creature": {
+                    "value": ""
+                }
+            },
+            "resources": {},
+            "schema": {
+                "version": null,
+                "lastMigration": null
+            }
+        },
+        "vehicle": {
+            "templates": [],
+            "source": {
+                "value": ""
+            },
+            "attributes": {
+                "ac": {
+                    "value": 10,
+                    "check": 0,
+                    "details": ""
+                },
+                "hardness": 0,
+                "hp": {
+                    "value": 10,
+                    "max": 10,
+                    "temp": 0,
+                    "details": ""
+                },
+                "collisionDC": {
+                    "value": 0
+                },
+                "collisionDamage": {
+                    "value": ""
+                }
+            },
+            "saves": {
+                "fortitude": {
+                    "value": 0,
+                    "saveDetail": ""
+                }
+            },
+            "details": {
+                "description": "",
+                "level": {
+                    "value": 1
+                },
+                "price": 0,
+                "space": {
+                    "long": 10,
+                    "wide": 10,
+                    "high": 5
+                },
+                "crew": "1 pilot",
+                "passengers": "",
+                "pilotingCheck": "",
+                "AC": 0,
+                "speed": 0
+            },
+            "traits": {
+                "value": [],
+                "rarity": "common",
+                "size": {
+                    "value": "lg"
+                },
+                "di": {
+                    "value": [
+                        "object-immunities"
+                    ],
+                    "custom": ""
+                },
+                "dr": [],
+                "dv": []
+            },
+            "schema": {
+                "version": null,
+                "lastMigration": null
+            }
+        }
+    },
+    "Item": {
+        "types": [
+            "action",
+            "ancestry",
+            "armor",
+            "backpack",
+            "book",
+            "equipment",
+            "class",
+            "condition",
+            "consumable",
+            "background",
+            "deity",
+            "effect",
+            "feat",
+            "heritage",
+            "kit",
+            "lore",
+            "melee",
+            "spell",
+            "spellcastingEntry",
+            "treasure",
+            "weapon"
+        ],
+        "templates": {
+            "common": {
+                "description": {
+                    "value": ""
+                },
+                "source": {
+                    "value": ""
+                },
+                "traits": {
+                    "value": [],
+                    "rarity": "common",
+                    "custom": ""
+                },
+                "rules": [],
+                "slug": null,
+                "schema": {
+                    "version": null,
+                    "lastMigration": null
+                }
+            },
+            "physical": {
+                "traits": {
+                    "otherTags": []
+                },
+                "quantity": 1,
+                "baseItem": null,
+                "hp": {
+                    "brokenThreshold": 0,
+                    "value": 0,
+                    "max": 0
+                },
+                "hardness": 0,
+                "weight": {
+                    "value": ""
+                },
+                "equippedBulk": {
+                    "value": ""
+                },
+                "price": {
+                    "value": {}
+                },
+                "equipped": {
+                    "carryType": "worn"
+                },
+                "stackGroup": null,
+                "negateBulk": {
+                    "value": "0"
+                },
+                "containerId": null,
+                "preciousMaterial": {
+                    "value": null
+                },
+                "preciousMaterialGrade": {
+                    "value": null
+                },
+                "size": "med",
+                "identification": {
+                    "status": "identified",
+                    "unidentified": {
+                        "name": "",
+                        "img": "",
+                        "data": {
+                            "description": {
+                                "value": ""
+                            }
+                        }
+
+                    },
+                    "misidentified": {}
+                },
+                "usage": {
+                    "value": ""
+                }
+            },
+            "itemLevel": {
+                "level": {
+                    "value": 0
+                }
+            },
+            "activatedEffect": {
+                "activation": {
+                    "type": "",
+                    "cost": 0,
+                    "condition": ""
+                },
+                "duration": {
+                    "value": null,
+                    "units": ""
+                },
+                "target": {
+                    "value": null,
+                    "units": "",
+                    "type": ""
+                },
+                "range": {
+                    "value": null,
+                    "long": null,
+                    "units": ""
+                },
+                "uses": {
+                    "value": 0,
+                    "max": 0,
+                    "per": null
+                },
+                "spell": {
+                    "data":null,
+                    "heightenedLevel":null
+                }
+            },
+            "investable": {
+                "equipped": {
+                    "invested": null
+                }
+            },
+            "status": {
+                "active": true,
+                "removable": true,
+                "references": {
+                    "children": [],
+                    "overrides": [],
+                    "overriddenBy": [],
+                    "immunityFrom": []
+                },
+                "hud": {
+                    "statusName": "",
+                    "selectable": true,
+                    "img": {
+                        "useStatusName": true,
+                        "value": ""
+                    }
+                },
+                "duration": {
+                    "perpetual": true,
+                    "value": 0,
+                    "text": ""
+                },
+                "modifiers": []
+            }
+        },
+        "backpack": {
+            "templates": [
+                "common",
+                "physical",
+                "itemLevel",
+                "investable"
+            ],
+            "bulkCapacity": {
+                "value": ""
+            },
+            "collapsed": {
+                "value": false
+            },
+            "stowing": false,
+            "usage": {
+                "value": "worn"
+            }
+        },
+        "book": {
+            "templates": [
+                "common",
+                "physical",
+                "itemLevel"
+            ],
+            "subtype": "formula",
+            "capacity": 1,
+            "items": []
+        },
+        "treasure": {
+            "templates": [
+                "common",
+                "physical",
+                "itemLevel"
+            ]
+        },
+        "weapon": {
+            "templates": [
+                "common",
+                "physical",
+                "itemLevel",
+                "investable"
+            ],
+            "category": "simple",
+            "group": null,
+            "bonus": {
+                "value": 0
+            },
+            "damage": {
+                "value": "",
+                "dice": 1,
+                "die": "d6",
+                "damageType": "slashing"
+            },
+            "equipped": {
+                "handsHeld": 0
+            },
+            "bonusDamage": {
+                "value": 0
+            },
+            "splashDamage": {
+                "value": 0
+            },
+            "range": null,
+            "reload": {
+                "value": ""
+            },
+            "MAP": {
+                "value": ""
+            },
+            "potencyRune": {
+                "value": 0
+            },
+            "strikingRune": {
+                "value": ""
+            },
+            "specific": {
+                "value": false
+            },
+            "propertyRune1": {
+                "value": null
+            },
+            "propertyRune2": {
+                "value": null
+            },
+            "propertyRune3": {
+                "value": null
+            },
+            "propertyRune4": {
+                "value": null
+            },
+            "usage": {
+                "value": "held-in-one-hand"
+            },
+            "property1": {
+                "value": "",
+                "dice": 0,
+                "die": "",
+                "damageType": "",
+                "critDice": 0,
+                "critDie": "",
+                "critDamage": "",
+                "critDamageType": ""
+            }
+        },
+        "armor": {
+            "templates": [
+                "common",
+                "physical",
+                "itemLevel",
+                "investable"
+            ],
+            "armor": {
+                "value": 0
+            },
+            "category": "light",
+            "group": null,
+            "strength": {
+                "value": 0
+            },
+            "dex": {
+                "value": 0
+            },
+            "check": {
+                "value": 0
+            },
+            "speed": {
+                "value": 0
+            },
+            "potencyRune": {
+                "value": 0
+            },
+            "resiliencyRune": {
+                "value": ""
+            },
+            "propertyRune1": {
+                "value": ""
+            },
+            "propertyRune2": {
+                "value": ""
+            },
+            "propertyRune3": {
+                "value": ""
+            },
+            "propertyRune4": {
+                "value": ""
+            },
+            "usage": {
+                "value": "wornarmor"
+            }
+        },
+        "melee": {
+            "templates": [
+                "common"
+            ],
+            "weaponType": {
+                "value": "melee"
+            },
+            "attack": {
+                "value": ""
+            },
+            "damageRolls": {},
+            "bonus": {
+                "value": 0
+            },
+            "attackEffects": {
+                "value": []
+            }
+        },
+        "consumable": {
+            "templates": [
+                "common",
+                "physical",
+                "activatedEffect",
+                "itemLevel"
+            ],
+            "consumableType": {
+                "value": "other"
+            },
+            "uses": {
+                "value": 0,
+                "max": 0,
+                "per": null,
+                "autoUse": true,
+                "autoDestroy": true
+            },
+            "charges": {
+                "value": 0,
+                "max": 0,
+                "_deprecated": true
+            },
+            "consume": {
+                "value": "",
+                "_deprecated": true
+            },
+            "autoUse": {
+                "value": true,
+                "_deprecated": true
+            },
+            "autoDestroy": {
+                "value": true,
+                "_deprecated": true
+            },
+            "usage": {
+                "value": "held-in-one-hand"
+            },
+            "spell": null
+        },
+        "equipment": {
+            "templates": [
+                "common",
+                "physical",
+                "itemLevel",
+                "investable"
+            ],
+            "usage": {
+                "value": "held-in-one-hand"
+            }
+        },
+        "ancestry": {
+            "templates": [
+                "common"
+            ],
+            "hp": 6,
+            "size": "med",
+            "reach": 5,
+            "speed": 25,
+            "boosts": {
+                "0": { "value": [] },
+                "1": { "value": [] },
+                "2": { "value": ["str", "dex", "con", "int", "wis", "cha"] }
+            },
+            "flaws": {
+                "0": { "value": [] }
+            },
+            "languages": {
+                "value": ["common"],
+                "custom": ""
+            },
+            "additionalLanguages": {
+                "count": 0,
+                "value": [],
+                "custom": ""
+            },
+            "items": {},
+            "vision": "normal"
+        },
+        "background": {
+            "templates": [
+                "common"
+            ],
+            "boosts": {
+                "0": { "value": [] },
+                "1": { "value": [] }
+            },
+            "items": {},
+            "trainedLore": "",
+            "trainedSkills": {
+                "value": []
+            }
+        },
+        "class": {
+            "templates": [
+                "common"
+            ],
+            "keyAbility": { "value": [] },
+            "items": {},
+            "hp": 0,
+            "trainedSkills": {
+                "value": [],
+                "additional": 0
+            },
+            "perception": 0,
+            "savingThrows": {
+                "fortitude": 0,
+                "reflex": 0,
+                "will": 0
+            },
+            "attacks": {
+                "simple": 0,
+                "martial": 0,
+                "advanced": 0,
+                "unarmed": 0,
+                "other": { "name": "", "rank": 0 }
+            },
+            "defenses": {
+                "unarmored": 0,
+                "light": 0,
+                "medium": 0,
+                "heavy": 0
+            },
+            "classDC": 0,
+            "ancestryFeatLevels": { "value": [ 1, 5, 9, 13, 17 ] },
+            "classFeatLevels": { "value": [ 1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ] },
+            "generalFeatLevels": { "value": [ 3, 7, 11, 15, 19 ] },
+            "skillFeatLevels": { "value": [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ] },
+            "skillIncreaseLevels": { "value": [ 3, 5, 7, 9, 11, 13, 15, 17, 19 ] }
+        },
+        "feat": {
+            "templates": [
+                "common",
+                "itemLevel"
+            ],
+            "featType": {
+                "value": "bonus"
+            },
+            "onlyLevel1": false,
+            "maxTakable": 1,
+            "actionType": {
+                "value": "passive"
+            },
+            "actionCategory": {
+                "value": ""
+            },
+            "actions": {
+                "value": null
+            },
+            "prerequisites": {
+                "value": []
+            },
+            "location": null
+        },
+        "heritage": {
+            "templates": [
+                "common"
+            ],
+            "ancestry": null
+        },
+        "lore": {
+            "templates": [
+                "common"
+            ],
+            "mod": {
+                "value": 0
+            },
+            "proficient": {
+                "value": 0
+            }
+        },
+        "action": {
+            "templates": [
+                "common"
+            ],
+            "actionType": {
+                "value": ""
+            },
+            "actionCategory": {
+                "value": ""
+            },
+            "actions": {
+                "value": null
+            },
+            "requirements": {
+                "value": ""
+            },
+            "trigger": {
+                "value": ""
+            },
+            "deathNote": false
+        },
+        "spell": {
+            "templates": [
+                "common",
+                "itemLevel"
+            ],
+            "spellType": {
+                "value": "attack"
+            },
+            "category": {
+                "value": "spell"
+            },
+            "traditions": {
+                "value": []
+            },
+            "school": {
+                "value": "evocation"
+            },
+            "components": {
+                "focus": false,
+                "material": false,
+                "somatic": false,
+                "verbal": false
+            },
+            "materials": {
+                "value": ""
+            },
+            "target": {
+                "value": ""
+            },
+            "range": {
+                "value": ""
+            },
+            "area": {
+                "value": ""
+            },
+            "time": {
+                "value": "2"
+            },
+            "duration": {
+                "value": ""
+            },
+            "damage": {
+                "value": {}
+            },
+            "save": {
+                "value": "",
+                "basic": ""
+            },
+            "sustained": {
+                "value": false
+            },
+            "cost": {
+                "value": ""
+            },
+            "ability": {
+                "value": ""
+            },
+            "location": {
+                "value": ""
+            },
+            "hasCounteractCheck": {
+                "value": false
+            }
+        },
+        "spellcastingEntry": {
+            "templates": [
+                "common"
+            ],
+            "ability": {
+                "value": "cha"
+            },
+            "spelldc": {
+                "value": 0,
+                "dc": 0
+            },
+            "tradition": {
+                "value": "arcane"
+            },
+            "prepared": {
+                "value": "innate"
+            },
+            "showUnpreparedSpells": {
+                "value": false
+            },
+            "showSlotlessLevels": {
+                "value": true
+            },
+            "proficiency": {
+                "value": 1
+            },
+            "displayLevels": {},
+            "slots": {
+                "slot0": {
+                    "prepared": [],
+                    "value": 0,
+                    "max": 0
+                },
+                "slot1": {
+                    "prepared": [],
+                    "value": 0,
+                    "max": 0
+                },
+                "slot2": {
+                    "prepared": [],
+                    "value": 0,
+                    "max": 0
+                },
+                "slot3": {
+                    "prepared": [],
+                    "value": 0,
+                    "max": 0
+                },
+                "slot4": {
+                    "prepared": [],
+                    "value": 0,
+                    "max": 0
+                },
+                "slot5": {
+                    "prepared": [],
+                    "value": 0,
+                    "max": 0
+                },
+                "slot6": {
+                    "prepared": [],
+                    "value": 0,
+                    "max": 0
+                },
+                "slot7": {
+                    "prepared": [],
+                    "value": 0,
+                    "max": 0
+                },
+                "slot8": {
+                    "prepared": [],
+                    "value": 0,
+                    "max": 0
+                },
+                "slot9": {
+                    "prepared": [],
+                    "value": 0,
+                    "max": 0
+                },
+                "slot10": {
+                    "prepared": [],
+                    "value": 0,
+                    "max": 0
+                },
+                "slot11": {
+                    "prepared": [],
+                    "value": 0,
+                    "max": 0
+                }
+            },
+            "autoHeightenLevel": {
+                "value": null
+            }
+        },
+        "kit": {
+            "templates": [
+                "common"
+            ],
+            "items": {}
+        },
+        "condition": {
+            "templates": [
+                "common",
+                "status"
+            ],
+            "base": "",
+            "group": "",
+            "value": {
+                "isValued": false,
+                "immutable": false,
+                "value": 0,
+                "modifiers": []
+            },
+            "sources": {
+                "hud": false,
+                "values": []
+            },
+            "alsoApplies": {
+                "linked": [],
+                "unlinked": []
+            },
+            "overrides": []
+        },
+        "effect": {
+            "templates": [
+                "common"
+            ],
+            "level": {
+                "value": 1
+            },
+            "duration": {
+                "value": -1,
+                "unit": "unlimited",
+                "sustained": false,
+                "expiry": "turn-start"
+            },
+            "start": {
+                "value": 0,
+                "initiative": null
+            },
+            "target": null,
+            "tokenIcon": {
+                "show": true
+            },
+            "badge": null,
+            "context": null
+        },
+        "deity": {
+            "templates": [],
+            "description": {
+                "value": ""
+            },
+            "source": {
+                "value": ""
+            },
+            "category": "deity",
+            "alignment": {
+                "own": "N",
+                "follower": [
+                    "N"
+                ]
+            },
+            "domains": {
+                "primary": [],
+                "alternate": []
+            },
+            "font": ["harm", "heal"],
+            "ability": [],
+            "skill": null,
+            "weapons": [],
+            "spells": {},
+            "rules": [],
+            "slug": null,
+            "schema": {
+                "version": null,
+                "lastMigration": null
+            }
+        }
+    }
+}

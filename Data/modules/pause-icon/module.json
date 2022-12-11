@@ -1,0 +1,47 @@
+{
+  "name": "pause-icon",
+  "id": "pause-icon",
+  "title": "Alternative Pause Icon",
+  "description": "Set your pause icon to whatever image you prefer, and set the message to your liking too. Supported formats are jpg, png, webP and gif. Set your rotation speed too!",
+  "author": "Freeze",
+  "authors": [
+    {
+      "name": "Freeze",
+      "discord": "Freeze#2689"
+    }
+  ],
+  "url": "https://gitlab.com/Freeze020/pause-icon/",
+  "version": "1.0.3",
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "10",
+  "compatibility": {
+    "minimum": 9,
+    "verified": 10
+  },
+  "scripts": [],
+  "esmodules": [
+    "scripts/script.js"
+  ],
+  "styles": ["styles/pi-config.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json"
+    },
+    {
+      "lang": "ja",
+      "name": "日本語",
+      "path": "lang/ja.json"
+    }
+  ],
+  "manifest": "https://gitlab.com/Freeze020/pause-icon/-/raw/master/module.json",
+  "download": "https://gitlab.com/Freeze020/pause-icon/-/archive/v1.0.3/pause-icon-v1.0.3.zip",
+  "protected": false,
+  "coreTranslation": false
+}

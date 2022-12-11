@@ -1,0 +1,32 @@
+{
+    "title": "World Scripter",
+    "description": "Allow you to write a script in game which executes as if it was a world script.",
+    "version": "0.3.4",
+    "esmodules": [
+        "scripts/hooks.js"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json",
+            "flags": {}
+        }
+    ],
+    "url": "https://github.com/Kekilla0/World-Scripter",
+    "id": "world-scripter",
+    "authors": [
+        {
+            "name": "kekilla#7036",
+            "flags": {}
+        }
+    ],
+    "compatibility": {
+        "minimum": "9",
+        "verified": "10"
+    },
+    "name": "world-scripter",
+    "minimumCoreVersion": "9",
+    "manifest": "https://github.com/Kekilla0/World-Scripter/releases/latest/download/module.json",
+    "download": "https://github.com/Kekilla0/World-Scripter/releases/download/0.3.4/module.zip"
+}

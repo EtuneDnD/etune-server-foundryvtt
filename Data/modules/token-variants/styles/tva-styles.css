@@ -1,0 +1,706 @@
+/* ---------------------------------------- */
+/* Pop-up Settings                          */
+/* ---------------------------------------- */
+.token-variants-popup-settings header.table-header {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border: 1px solid #191813;
+  text-align: center;
+  color: #f0f0e0;
+  font-weight: bold;
+  text-shadow: 1px 1px #000;
+}
+
+.token-variants-popup-settings li.setting .form-fields {
+  display: flex;
+  justify-content: space-around;
+}
+
+.token-variants-popup-settings ul.setting-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 400px;
+  overflow: hidden auto;
+  scrollbar-width: thin;
+}
+
+.token-variants-config-control {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2px;
+  border: 1px solid #191813;
+  color: #f0f0e0;
+  font-weight: bold;
+  text-shadow: 1px 1px #000;
+}
+
+/**
+ * Role Permission Configuration Form
+ */
+.token-variants-permissions header.table-header {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border: 1px solid #191813;
+  text-align: center;
+  color: #f0f0e0;
+  font-weight: bold;
+  text-shadow: 1px 1px #000;
+}
+.token-variants-permissions ul.permissions-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 400px;
+  overflow: hidden auto;
+  scrollbar-width: thin;
+}
+.token-variants-permissions li.permission {
+  padding: 5px;
+  border-bottom: 1px solid #7a7971;
+}
+.token-variants-permissions li.permission .form-fields {
+  justify-content: space-around;
+}
+.token-variants-permissions li.permission input[type='checkbox'] {
+  margin: 0;
+}
+.token-variants-permissions li.permission button {
+  order: 0;
+}
+.token-variants-permissions .index {
+  flex: 0 0 200px;
+  text-align: left;
+  font-weight: bold;
+}
+.token-variants-permissions .hint {
+  flex: 0 0 100%;
+  color: #4b4a44;
+  font-size: 13px;
+  margin: 5px 0 0;
+}
+
+/**
+ * User List Configuration Form
+ */
+#token-variants-user-list header.table-header {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border: 1px solid #191813;
+  text-align: center;
+  color: #f0f0e0;
+  font-weight: bold;
+  text-shadow: 1px 1px #000;
+}
+#token-variants-user-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 400px;
+  overflow: hidden auto;
+  scrollbar-width: thin;
+}
+#token-variants-user-list li {
+  border-bottom: 1px solid #7a7971;
+  text-align: left;
+}
+#token-variants-user-list li .form-fields {
+  justify-content: space-around;
+  text-align: left;
+}
+#token-variants-user-list li input[type='checkbox'] {
+  margin: 0;
+}
+#token-variants-user-list .index {
+  flex: 0 0 40px;
+  text-align: left;
+  font-weight: bold;
+}
+#token-variants-user-list .hint {
+  flex: 0 0 100%;
+  color: #4b4a44;
+  font-size: 13px;
+  margin: 5px 0 0;
+}
+
+/**
+ * Config Settings
+ */
+.tva-setting-nav {
+  display: flex;
+  flex-flow: wrap;
+  height: 64px !important;
+  margin-bottom: 10px !important;
+}
+
+.tva-setting-nav hr {
+  width: 100%;
+  flex-basis: 100%;
+  height: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* ---------------------------------------- */
+/* Art Select Sheet                         */
+/* ---------------------------------------- */
+.token-variants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 0.5rem;
+  text-align: center;
+}
+
+.token-variants-grid > div {
+  display: grid;
+}
+
+.token-variants-grid > div > .token-variants-grid-box,
+.token-variants-grid > div > .token-variants-grid-image {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.token-variants-grid > div > .token-variants-grid-box {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.token-variants-grid > div > .token-variants-grid-box.selected {
+  border-color: lime;
+  border-width: 2px;
+}
+
+.token-variants-grid-image {
+  max-width: 98%;
+  max-height: 113px;
+  border: none;
+  display: block;
+  margin: auto;
+  pointer-events: none;
+}
+
+.token-variants-grid > div > .fa-play {
+  display: inline-block;
+  position: relative;
+  grid-area: 1 / 1 / 2 / 2;
+  left: -38%;
+  top: 80%;
+  pointer-events: none;
+}
+
+.token-variants-grid > div > .fa-cog {
+  display: inline-block;
+  position: relative;
+  grid-area: 1 / 1 / 2 / 2;
+  left: 38%;
+  top: 6px;
+  color: rgb(182, 182, 121);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.token-variants-grid > div > .fa-cog.active {
+  opacity: 1;
+}
+
+.token-variants-grid > div > .token-variants-grid-box:hover {
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.token-variants-grid > div > p {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.token-variants-grid > div > p.token-variants-grid-image {
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.token-variants-grid > div > span {
+  white-space: nowrap;
+}
+
+.token-variants-grid > div > p > mark {
+  background-color: initial;
+  font-weight: bold;
+  color: rgba(255, 0, 0, 0.6);
+}
+
+.token-variants-grid .token-variants-unrecognised {
+  border-color: red;
+}
+
+.token-variants-portrait-token > div {
+  max-width: 80px;
+  margin: auto;
+  padding-bottom: 5px;
+  color: green;
+  font-weight: bold;
+}
+
+.token-variants-portrait-token.item {
+  float: left;
+  margin-right: 15px;
+}
+
+.token-variants-portrait-token > div > .image.active {
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+.token-variants-banner > div > input {
+  text-align: center;
+}
+
+.token-variants-banner > .item-description {
+  overflow: hidden;
+}
+
+.token-variants-banner > .item-description > .item-description-content {
+  overflow: scroll;
+  max-height: 200px;
+}
+
+.token-variants-banner {
+  position: sticky;
+  top: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background: inherit;
+  top: -8px;
+}
+
+/* ---------------------------------------- */
+/* General                                  */
+/* ---------------------------------------- */
+input[type='range'] + .token-variants-range-value {
+  display: block;
+  flex: 0 1 48px;
+  text-align: center;
+  border: 1px solid #b5b3a4;
+  padding: 2px;
+  margin-left: 10px;
+}
+
+/* ---------------------------------------- */
+/* Search Paths                             */
+/* ---------------------------------------- */
+
+ol.token-variant-table textarea {
+  resize: none;
+  min-height: 44px;
+}
+ol.token-variant-table {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 600px;
+  overflow-y: auto;
+}
+ol.token-variant-table .table-row {
+  padding: 2px 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+ol.token-variant-table .table-row input[type='text'] {
+  width: 100%;
+  height: 28px;
+}
+ol.token-variant-table .table-row input[type='checkbox'] {
+  width: 100%;
+  margin-top: 7px;
+}
+ol.token-variant-table .table-row > div {
+  line-height: 36px;
+  margin-right: 5px;
+}
+ol.token-variant-table .table-row .path-image {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  margin: 0;
+}
+ol.token-variant-table .table-row .path-image img {
+  border: none;
+  object-fit: cover;
+  object-position: 50% 0;
+}
+ol.token-variant-table .table-row .path-source {
+  flex: 0.2;
+}
+ol.token-variant-table .table-row .path-text {
+  flex: 1;
+}
+ol.token-variant-table .table-row .path-cache,
+ol.token-variant-table .table-row .path-category {
+  flex: 0 0 50px;
+  text-align: center;
+}
+ol.token-variant-table .table-row .path-share {
+  flex: 0 0 50px;
+  text-align: center;
+}
+ol.token-variant-table .table-row .path-controls,
+ol.token-variant-table .table-row .effect-controls,
+ol.token-variant-table .table-row .imgur-control {
+  flex: 0 0 44px;
+  margin: 0;
+  text-align: center;
+}
+ol.token-variant-table .table-row .imgur-control {
+  display: none;
+}
+ol.token-variant-table .table-row .imgur-control.active {
+  display: block;
+}
+ol.token-variant-table .table-row .path-controls i,
+ol.token-variant-table .table-row .effect-controls i,
+ol.token-variant-table .table-row .imgur-control i {
+  width: 20px;
+}
+ol.token-variant-table .table-header {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid #7a7971;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+/* ---------------------------------------- */
+/* Active Effect Config List                */
+/* ---------------------------------------- */
+ol.token-variant-table .table-row .effect-priority {
+  flex: 0.15;
+}
+
+ol.token-variant-table .table-row .effect-image {
+  flex: 0 0 50px;
+  text-align: center;
+}
+
+ol.token-variant-table .table-row .effect-config {
+  flex: 0 0 70px;
+  text-align: center;
+}
+
+ol.token-variant-table .table-row .effect-overlay {
+  flex: 0 0 50px;
+  text-align: center;
+}
+
+ol.token-variant-table .table-row .effect-overlay > input {
+  vertical-align: top;
+  width: 36%;
+}
+
+ol.token-variant-table .table-row .effect-overlay > a {
+  vertical-align: middle;
+}
+
+ol.token-variant-table .table-row .effect-config i.active {
+  color: orange;
+}
+
+ol.token-variant-table .table-row .effect-config.active {
+  color: orange;
+}
+
+ol.token-variant-table .table-row .effect-config-edit.active {
+  color: orange;
+}
+
+ol.token-variant-table .table-row .effect-config-script.active {
+  color: orange;
+}
+
+/* ---------------------------------------- */
+/* Active Effect Config                     */
+/* ---------------------------------------- */
+
+#token-variants-active-effect-config .effect-config.active {
+  color: orange;
+}
+
+#token-variants-active-effect-config .effect-config-edit.active {
+  color: orange;
+}
+
+#token-variants-active-effect-config .effect-config-script.active {
+  color: orange;
+}
+
+/* ---------------------------------------- */
+/* Token HUD Settings                       */
+/* ---------------------------------------- */
+#tile-hud .token-variants-wrap,
+#token-hud .token-variants-wrap {
+  position: absolute;
+  left: 75px;
+  visibility: hidden;
+  top: 50%;
+  transform: translate(0%, -50%);
+  width: max-content;
+  max-width: 350px;
+  max-height: 350px;
+  text-align: start;
+  grid-template-columns: 100px 100px 100px;
+  overflow-y: auto;
+}
+#tile-hud .token-variants-wrap.list,
+#token-hud .token-variants-wrap.list {
+  grid-template-columns: unset !important;
+  max-width: 450px;
+}
+
+#tile-hud .token-variants-wrap.active,
+#token-hud .token-variants-wrap.active {
+  visibility: visible;
+}
+
+#tile-hud .token-variants-button-select,
+#token-hud .token-variants-button-select {
+  max-width: 300px;
+  overflow-wrap: break-word;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: max-content !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 0 !important;
+  position: relative;
+  display: inline-block;
+}
+
+#tile-hud .token-variants-button-select.hide,
+#token-hud .token-variants-button-select.hide {
+  display: none;
+}
+
+#tile-hud .token-variants-button-select .fa-share,
+#token-hud .token-variants-button-select .fa-share {
+  position: absolute;
+  left: 0;
+  color: green;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#tile-hud .token-variants-button-select .fa-cog,
+#token-hud .token-variants-button-select .fa-cog {
+  position: absolute;
+  right: 0;
+  color: rgb(182, 182, 121);
+  opacity: 0;
+  pointer-events: none;
+}
+
+#tile-hud .token-variants-button-select .fa-play,
+#token-hud .token-variants-button-select .fa-play {
+  position: absolute;
+  left: 5px;
+  top: 70%;
+  color: dimgray;
+  pointer-events: none;
+}
+
+#tile-hud .token-variants-button-select .fa-cog.active,
+#token-hud .token-variants-button-select .fa-cog.active {
+  opacity: 1;
+}
+
+#tile-hud .token-variants-button-select .fa-share.active,
+#token-hud .token-variants-button-select .fa-share.active {
+  opacity: 1;
+}
+
+#tile-hud .token-variants-context-menu,
+#token-hud .token-variants-context-menu {
+  display: none;
+}
+
+#tile-hud .token-variants-context-menu.active,
+#token-hud .token-variants-context-menu.active {
+  display: block;
+}
+
+#tile-hud .token-variants-context-menu > button,
+#token-hud .token-variants-context-menu > button {
+  width: 48%;
+  background-color: rgb(28, 28, 28, 0.7);
+  color: white;
+  border-color: black;
+}
+
+#tile-hud .token-variants-button-select:hover .token-variants-button-image,
+#token-hud .token-variants-button-select:hover .token-variants-button-image {
+  opacity: 1 !important;
+}
+
+#tile-hud .token-variants-button-select.list,
+#token-hud .token-variants-button-select.list {
+  max-width: 440px;
+  width: 100% !important;
+  margin: 8px 0px !important;
+  line-height: 40px !important;
+}
+
+#tile-hud .token-variants-button-image,
+#token-hud .token-variants-button-image {
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+  object-fit: contain;
+}
+
+#token-hud .token-variants-button-disabled span,
+#token-hud .token-variants-button-disabled img,
+#token-hud .token-variants-button-disabled video {
+  opacity: 1 !important;
+  filter: grayscale(100%);
+}
+
+#tile-hud .token-variants-button-disabled span,
+#tile-hud .token-variants-button-disabled img,
+#tile-hud .token-variants-button-disabled video {
+  opacity: 1 !important;
+  filter: grayscale(100%);
+}
+
+#token-hud .token-variants-button-disabled span,
+#token-hud .token-variants-button-disabled:hover img,
+#token-hud .token-variants-button-disabled:hover video {
+  color: #ccc;
+}
+
+#tile-hud .token-variants-button-disabled span,
+#tile-hud .token-variants-button-disabled:hover img,
+#tile-hud .token-variants-button-disabled:hover video {
+  color: #ccc;
+}
+
+.tile-sheet .token-variants-default,
+.token-sheet .token-variants-default {
+  display: none;
+}
+
+.tile-sheet .token-variants-default.active,
+.token-sheet .token-variants-default.active {
+  display: block;
+}
+
+/* ---------------------------------------- */
+/* Token Custom Config                      */
+/* ---------------------------------------- */
+
+.tva-config-checkbox {
+  flex: 0 !important;
+}
+
+/* --------------------------------------- */
+/*  JSON Edit                              */
+/* --------------------------------------- */
+/* .token-variants-json-edit {
+  min-width: 360px;
+  min-height: 320px;
+}
+.token-variants-json-edit form > * {
+  flex: 0;
+}
+.token-variants-json-edit .form-group {
+  flex: 1;
+}
+.token-variants-json-edit .form-group label {
+  height: 24px;
+}
+.token-variants-json-edit textarea {
+  height: calc(100% - 24px);
+  height: -moz-calc(100%-100px);
+  height: -webkit-calc(100%-100px);
+  resize: none;
+} */
+
+/* ---------------------------------------- */
+/* Missing Image Form                       */
+/* ---------------------------------------- */
+
+#token-variants-missing-images header.table-header {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border: 1px solid #191813;
+  text-align: left;
+  color: #f0f0e0;
+  font-weight: bold;
+  text-shadow: 1px 1px #000;
+}
+#token-variants-missing-images ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 400px;
+  overflow: hidden auto;
+  scrollbar-width: thin;
+}
+#token-variants-missing-images li {
+  border-bottom: 1px solid #7a7971;
+  text-align: left;
+  margin-top: 10px;
+}
+#token-variants-missing-images li .form-fields {
+  justify-content: space-around;
+  text-align: left;
+}
+#token-variants-missing-images li input[type='checkbox'] {
+  margin: 0;
+}
+#token-variants-missing-images .index {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  margin: 0;
+}
+#token-variants-missing-images .hint {
+  flex: 0 0 100%;
+  color: #4b4a44;
+  font-size: 13px;
+  margin: 5px 0 0;
+}
+
+#token-variants-missing-images .missing-document {
+  flex: 0 0 110px;
+}
+
+#token-variants-missing-images .missing-image {
+  flex: 0 0 50px;
+  margin-left: 15px;
+}
+
+#token-variants-missing-images .missing-controls {
+  flex: 0 0 50px;
+  margin-left: 15px;
+}
+
+/* ---------------------------------------- */
+/* Overlay Config Select                    */
+/* ---------------------------------------- */
+
+.limited-user-select option {
+  background: lightcoral;
+}
+
+.limited-user-select option:checked {
+  background: lightgreen;
+}
+
+/* ---------------------------------------- */
+/* Token Config                             */
+/* ---------------------------------------- */
+
+.token-variants-randomImgDefault {
+  display: none;
+}
+
+.token-variants-randomImgDefault.active {
+  display: block;
+}

@@ -1,0 +1,83 @@
+#hotbar {
+    position: relative;
+}
+
+#hotbar .macro .tooltip {
+    z-index: 30;
+}
+
+.hotbar-page {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    left: 0px;
+    max-height: 260px;
+    z-index: 10;
+    overflow:hidden;
+}
+.hotbar-page.custom-hotbar {
+    bottom: 110px;
+}
+/*
+.hotbar-page.rpg-ui {
+    width: 662px;
+}
+    */
+
+.hotbar-page.collapsed {
+    display: none;
+    pointer-events: none;
+}
+
+.hotbar-page.reverse {
+    flex-direction: column-reverse;
+}
+
+.hotbar-page.hidefirst .hotbar-page-row:first-child {
+    display: none;
+}
+
+.hotbar-page .action-bar {
+    flex: 1;
+    height: 52px;
+    pointer-events: all;
+    flex-wrap: nowrap;
+}
+
+#hotbar .macro-list {
+    flex-wrap: nowrap;
+    height: 100%;
+    list-style: none;
+    margin: 0 2px;
+    padding: 0;
+    border: 1px solid var(--color-border-dark);
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: repeat(10, var(--macro-size));
+}
+
+.hotbar-page.rpg-ui .macro-list {
+    flex: 0 0 582px;
+}
+
+.hotbar-page .hotbar-page-row {
+    flex-wrap: nowrap;
+}
+
+.hotbar-page .hotbar-page-row.selected .bar-controls .page-number {
+    color: #bc8c4a;
+}
+
+.hotbar-page .bar-controls {
+    cursor: pointer;
+    pointer-events: all;
+}
+
+#hotbar .action-bar.no-arrows + .bar-controls span.page-number,
+#hotbar .hotbar-page .bar-controls span.page-number,
+#hotbar .hotbar-page .bar-controls i {
+    line-height: 50px;
+}
+.hotbar-page .page-number:hover {
+    text-shadow: 0 0 8px red;
+}

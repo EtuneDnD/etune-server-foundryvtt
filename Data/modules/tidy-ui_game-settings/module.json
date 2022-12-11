@@ -1,0 +1,46 @@
+{
+  "id": "tidy-ui_game-settings",
+  "name": "tidy-ui_game-settings",
+  "title": "Tidy UI - Game Settings",
+  "description": "User Interface Improvements for the Game Settings Window",
+  "authors": [{ "name": "sdenec" }],
+  "version": "0.1.51",
+  "minimumCoreVersion": "10",
+  "compatibleCoreVersion": "10",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  },
+  "styles": ["./styles/tidy-ui_game-settings.css"],
+  "esmodules": ["tidy-ui_game-settings.js"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "langs/en.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "langs/de.json"
+    },
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "langs/es.json"
+    },
+    {
+      "lang": "zh-tw",
+      "name": "正體中文",
+      "path": "langs/zh-tw.json"
+    },
+    {
+      "lang": "ja",
+      "name": "日本語",
+      "path": "langs/ja.json"
+    }
+  ],
+  "url": "https://github.com/sdenec/tidy-ui_game-settings",
+  "manifest": "https://raw.githubusercontent.com/sdenec/tidy-ui_game-settings/master/module.json",
+  "download": "https://github.com/sdenec/tidy-ui_game-settings/raw/master/tidy-ui_game-settings.zip"
+}

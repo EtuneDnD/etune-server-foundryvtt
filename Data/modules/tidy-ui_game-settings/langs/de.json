@@ -1,0 +1,25 @@
+{
+  "TidyUI.moduleSettingsActive" : {
+    "name" : "Immer Modul-Einstellungs-Tab öffnen.",
+    "hint" : "Wenn du häufig die Modul-Einstellungen änderst, kannst du mit dieser Option immer diesen Tab zuerst öffnen."
+  },
+  "TidyUI.hideDisableAll" : {
+    "name" : "'Alle Module Deaktivieren'-Button verstecken.",
+    "hint" : "Aktivieren, um den Button 'Alle Module Deaktivieren' neben dem 'Speichern'-Button zu verstecken."
+  },
+  "TidyUI.uncheckAll" : "Alles außer Tidy UI deaktivieren",
+  "TidyUI.checkAll" : "Alle Module aktivieren",
+  "TidyUI.export" : "Aktive Modul-Liste exportieren",
+  "TidyUI.import" : "Modul-Liste importieren",
+  "TidyUI.toClipboard" : "Als Text kopieren",
+  "TidyUI.toFile" :"Als JSON-Datei speichern",
+  "TidyUI.fromFile" :"JSON-Datei importieren",
+  "TidyUI.activate" : "Module aktivieren",
+  "TidyUI.close" : "Fenster schließen",
+  "TidyUI.notice" : "Modul-Liste erfolgreich in die Zwischenablage kopieren - Vergiss nicht sie zu speichern!",
+  "TidyUI.paste" : "Füge deine gespeicherte Modul-Liste hier ein!",
+  "TidyUI.search" : "Fange an zu tippen, um Module zu filtern",
+  "TidyUI.clear" : "Suchfeld leeren",
+  "TidyUI.warning" :"Warnung:",
+  "TidyUI.instruction" : "Um die Liste reimportieren zu können muss sie als JSON gespeichert werden. Textformat ist nur nützlich, um es in Discord oder ähnlichem zu posten. Das alte Format kann weiterhin importiert werden."
+}

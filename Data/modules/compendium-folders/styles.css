@@ -1,0 +1,233 @@
+/* ----------------------------------------- */
+/*  Folders and Subfolders
+/* ----------------------------------------- */
+.directory-item.compendium-folder[data-folder-id="hidden"]{
+  display:none !important;
+}
+.compendium-pack{
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  margin: 0px !important;
+  line-height:20px !important;
+}
+#compendium .directory-item{
+  line-height:normal !important;
+}
+.directory-item.compendium-folder h4{
+  margin: 0 0 0.5rem !important;
+}
+li.compendium-folder > .compendium-folder-header {
+  padding: 6px ;
+  line-height: 24px;
+  background: rgba(255, 255, 255, 0.2);
+  border-top: 1px solid #000 ;
+  border-bottom: 1px solid #000 ;
+}
+li.compendium-folder > .compendium-folder-header h3 {
+  margin: 0;
+  font-size: 1.17em;
+  border-bottom: none;
+  /*color: #FFF;*/
+}
+li.compendium-folder > .compendium-folder-header h3 > i {
+  margin-right: 10px;
+}
+li.compendium-folder > .compendium-folder-header .edit-folder {
+  flex: 0 0 20px;
+  text-align: center;
+  font-size: 14px;
+}
+li.compendium-folder.collapsed .subdirectory {
+  display: none;
+}
+li.compendium-folder.collapsed > .compendium-folder-header {
+  background: rgba(0, 0, 0, 0.5);
+}
+li.compendium-folder.collapsed > .compendium-folder-header h3 {
+  text-shadow: none;
+  color: inherit;
+}
+li.compendium-folder.collapsed > .compendium-folder-header h3 > i:before {
+  content: "\f07b";
+}
+li.compendium-folder.collapsed > .compendium-folder-header .edit-folder {
+  display: none;
+}
+li.compendium-folder  label{
+  cursor:pointer;
+}
+/* pf2e specific */
+#compendium .directory-header .header-search a.header-control{
+  visibility:visible !important;
+}
+#compendium .create-compendium{
+  flex-basis:0%;
+}
+/* 0.8.x */
+li.compendium-folder > .compendium-folder-header .create-entity-c{
+  flex: 0 0 20px;
+  text-align: center;
+  font-size: 14px;
+}
+/* Fix for issue #2 */
+#compendium h3 {border: 0px !important;padding: 0px !important;background: none !important;}
+/* Form styles */
+.form-compendium-list,.form-folder-list {
+  height:300px; 
+  overflow:auto;
+  background:rgba(0,0,0,0.05);
+  border:1px solid #7a7971;
+  border-radius:3px;
+  padding:1px 3px;
+  font-size:13px;
+}
+/* button.cfolder-create{
+  margin-top:5px !important;
+} */
+button.cfolder-submit{
+  width:50%
+}
+button.cfolder-submit#delete  {
+  background-color:#c51c1c
+}
+.compendium-folder-header > .create-folder,.move-folder,.edit-folder{
+  flex:none;
+  padding-right:3px;
+  color: #CCC;
+}
+.compendium-folder-header > .create-folder {
+  padding-right:0px !important;
+}
+.folder-list{
+  margin:0px;
+  padding:0px;
+  position:relative !important;
+}
+.compendium-list,.entry-list{
+  margin-left:3px !important;
+  position:relative !important;
+}
+.folder-list > .compendium-folder{
+  flex:1;
+  list-style:none;
+}
+.folder-contents{
+  border-left:6px solid #000000;
+  border-bottom:2px solid #000000;
+}
+.folder-contents > .folder-list{
+  border-left:2px solid #333;
+}
+.compendium-list > .compendium-pack{
+  padding-top:10px !important ;
+  padding-bottom:10px !important ;
+  padding-left:5px !important ;
+  padding-right:5px !important ;
+  margin:0px !important
+}
+
+#folder-create input[name='search-packs']{
+  width: calc(100% - 25px);
+}
+#folder-move input[name='search-folders']{
+  width: calc(100% - 25px);
+}
+#folder-create i.fa-search{
+  padding-left:5px;
+  padding-right:5px;
+}
+#folder-move i.fa-search{
+  padding-left:5px;
+  padding-right:5px;
+}
+#folder-create .form-header{
+  padding-top:4px;
+  padding-bottom:4px;
+}
+#folder-move .form-header{
+  padding-top:4px;
+  padding-bottom:4px;
+}
+#folder-move input[type='radio']{
+  flex:none;
+  padding-left:10px
+}
+#import-export textarea{
+  height:300px;
+}
+button.create-compendium{
+  font-size:12.5px;
+}
+/*Inside Compendiums*/
+.compendium li.compendium-folder >.folder-contents > .entry-list{
+  padding:0;
+  margin:0;
+}
+.folder-header a.export-folder,a.import-folder,a.create-fic{
+  flex: 0 0 20px;
+    text-align: center;
+    /*color: #CCC;*/
+    font-size: 14px;
+}
+div.compendium .compendium-folder-header > h3 > img {
+  width:22px !important;
+  height:22px !important;
+  margin: 0 8px 0 0px !important;
+  margin-bottom: -6px !important;
+  border:0px !important; 
+  border-radius:0px !important;
+}
+/*Context menu*/
+.compendium-folder > #folder-context-menu{
+  margin-top:-7px
+}
+#folder-context-menu{
+  width: 32px;
+  height: max-content;
+  min-width: 150px;
+  max-width: 360px;
+  position: absolute;
+  background: #23221d;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #EEE;
+  z-index:99999;
+}
+#folder-context-menu ol.context-items{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#folder-context-menu  li.context-item{
+  padding: 0 5px;
+  line-height: 32px;
+}
+#folder-context-menu li.context-item > i{
+  margin-right:5px;
+}
+#folder-context-menu li.context-item:hover{
+  color: #FFF;
+  text-shadow: 0 0 4px red;
+}
+button.dialog-button.deleteAll  {
+  background-color:#c51c1c
+}
+.d35ecustom #sidebar li.folder::before{
+	background:none
+}
+.d35ecustom #sidebar li.folder h3 i{
+	display:inline	
+}
+#fix-compendium table{
+  border-left: 1px solid #7a7971;
+  border-right: 1px solid #7a7971;
+}
+#fix-compendium table th{
+  border-bottom:1px solid #7a7971;
+}
+button[data-key='compendium-folders.cleanupCompendiums']{
+  background-color: #aa0000;
+    color: #f0f0e0;
+}

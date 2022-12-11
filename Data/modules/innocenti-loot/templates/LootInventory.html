@@ -1,0 +1,84 @@
+<div class="innocenti-loot flexcol">
+    <h4 class="dialog-content">
+        <form style="height:100%;">
+            <div class="form-group">
+                <label for="giveloot">{{localize 'Looting.MsgChat.SendLoot'}}</label>
+                <select id="giveloot" name="giveloot">
+                    {{selectOptions giveLootOptions selected=giveloot localize=true}}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="giveloot">{{localize 'Looting.MsgChat.NameLoot'}}</label>
+                <input type="text" id="lootName" value="{{lootName}}" />
+            </div>
+            <h2>{{localize 'Looting.MsgChat.Targets'}}</h2>
+            <div class="form-group">
+                <ol class="target-list">
+                    {{#each targets}}
+                    <li class="item flex-row{{#if this.disabled}} disabled{{/if}}" data-actor-id="{{this.actor.id}}" draggable="true">
+                        <div class="item-name flexcrow rollable">
+                            <div class="item-image" style="background-image: url('{{this.token.img}}')" title="{{this.name}}">
+                                <video width="30" height="30"><source src="{{this.token.img}}" /></video>
+                            </div>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ol>
+            </div>
+            <div class="form-group sheet">
+                <ol class="items-list">
+                    <li class="items-header flexrow">
+                        {{#each currencys}}
+                        <h3 class="item-name flexrow">{{this.abbreviation}}</h3>
+                        {{/each}}
+                    </li>
+                    <ol class="item-list">
+                        <li class="item flexrow">
+                            {{#each currency}}
+                            <div class="item-name">
+                                <h4>{{this}}</h4>
+                            </div>
+                            {{/each}}
+                        </li>
+                    </ol>
+                </ol>
+            </div>
+            <h3 class="form-group sheet">
+                <ol class="items-list">
+                    <li class="items-header flexrow">
+                        <h3 class="item-name flexrow">{{localize 'Looting.MsgChat.Loot'}}</h3>
+                        <h3 class="item-name flexrow"></h3>
+                        <h3 class="item-name flexrow">{{localize 'Looting.MsgChat.Quantity'}}</h3>
+                        <h3 class="item-name flexrow">{{localize 'Looting.MsgChat.Values'}}</h3>
+                        <h3 class="item-name flexrow">{{localize 'Looting.MsgChat.Sell'}}<input type="checkbox" id="select-all" name="select-all"></h3>
+
+                    </li>
+
+                    <ol class="item-list">
+                        {{#each loots}}
+                        <li class="item flexrow{{#if this.disabled}} disabled{{/if}}" data-item-id="{{this.id}}" draggable="true">
+                            <div class="item-name flexrow rollable">
+                                <div class="item-image" style="background-image: url('{{this.data.img}}')">
+                                    <video width="30" height="30"><source src="{{this.data.img}}" /></video>
+                                </div>
+                            </div>
+                            <h4 class="itemloot-name flexrow">{{this.data.name}}</h4>
+                            <h4 class="flexrow">{{this.data.data.quantity}}</h4>
+                            <h4 class="itemloot-price flexrow">{{this.data.data.price}} gp</h4>
+                            <div class="item-controls flexrow change-box">
+                                <input type="checkbox" id="changegp" name="changegp" value="{{this.name}}">
+                            </div>
+                        </li>
+                        {{/each}}
+                    </ol>
+                </ol>
+</div>
+        </form>
+    </div>
+<div class="dialog-buttons flexrow">
+    <button class="dialog-buttons lootall" data-button="lootall">Loot All</button>
+    {{#if this.lootsheet}}
+    <button class="dialog-buttons lootcreate" data-button="lootcreate">Create Loot</button>
+    {{/if}}
+</div>
+</div>

@@ -1,0 +1,49 @@
+{
+	"mcc": {
+		"title": "Titre",
+		"type": "Type",
+		"id": "ID",
+		"notes": "Notes",
+		"statuses": {
+			"o": "Le module fonctionne avec quelques erreurs",
+			"b": "Phase de test bloquée",
+			"g": "Le module fonctionne sans problème ou une nouvelle version est disponible",
+			"n": "Pas de test nécessaire",
+			"a": "Archivé - Le module peut encore fonctionner mais n'est plus maintenu",
+			"x": "Le module ne fonctionne pas ou empêche le chargement du monde",
+			"u": "Statut inconnu - Le module n'est peut être pas sur la liste officielle",
+			"c": "Marqué comme compatible par le développeur dans le manifeste"
+		},
+		"loading": "Chargement…",
+		"appTitle": "Vérificateur de Compatibilité des Modules",
+		"selectVersion": "Vérifier la compatibilité pour :",
+		"version": "Version Compatible",
+		"status": "Statut",
+		"untitled": "Sans titre",
+		"report": {
+			"visible": "Paquets visibles",
+			"percentage": "Pourcentage prêt"
+		},
+		"source": "Ouvrir la feuille officielle",
+		"error": "Veuillez réessayer. Si ce problème persiste, veuillez rapporter le soucis sur GitHub.",
+		"issues": "Traqueur de bug",
+		"button": "Vérificateur de compatibilité des modules",
+		"moduleManagementColorsExplanation": "Les couleurs de fond ci-dessous sont utilisées pour indiquer le statut du module dans la dernière version de Foundry VTT. Ouvrez le vérificateur de compatibilité des modules avec le bouton ci-dessous pour plus d'informations.",
+		"patreon": "Soutenir sur Patreon",
+		"scrollTop": "Revenir en haut",
+		"hideDetails": "Cacher les détails",
+		"showDetails": "Afficher les détails",
+		"enableActive": "Afficher uniquement les paquets actifs",
+		"disableActive": "Afficher tous les paquets installés",
+		"percentageFilteredTooltip": "Le pourcentage prêt pour le nombre de paquets filtrés actuels",
+		"packageListingURL": "Liste des paquets Foundry VTT",
+		"foundryHubURL": "Foundry Hub",
+		"bazaarURL": "The Forge Bazaar",
+		"projectURL": "URL du projet",
+		"showCompatible": "Afficher les paquets compatibles",
+		"resetFilters": "Réinitialiser les filtres",
+		"reminder": "N'oubliez pas que les développeurs de modules et de systèmes sont des bénévoles, qu'ils ont leur propre vie et leur propre emploi du temps et que ce n'est pas parce qu'ils n'ont pas encore effectué de mise à jour qu'ils ne le feront jamais. La patience est importante ! Les développeurs sont aussi des êtres humains.",
+		"unknownAuthor": "Auteur inconnu",
+		"percentageTooltip": "Le pourcentage de paquets visibles qui sont prêts à être utilisés sur la version sélectionnée de Foundry VTT."
+	}
+}

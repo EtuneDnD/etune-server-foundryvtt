@@ -1,0 +1,35 @@
+{
+  "name": "spellpoints5e",
+  "title": "Spell Points for dnd5e",
+  "description": "(Only for dnd5e) Replaces spell slots on the player sheets with the spell points variant defined in the Dungeon Master's Guide. ",
+  "author": "Mary Usagi",
+  "url": "https://github.com/Mary-Usagi/spellpoints5e/tree/master",
+  "flags": {},
+  "version": "1.0.4",
+  "minimumCoreVersion": "0.8.8",
+  "compatibleCoreVersion": "9",
+  "scripts": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/main.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [],
+  "system": [
+    "dnd5e"
+  ],
+  "dependencies": [],
+  "socket": true,
+  "manifest": "https://github.com/Mary-Usagi/spellpoints5e/releases/latest/download/module.json",
+  "download": "https://github.com/Mary-Usagi/spellpoints5e/releases/download/v1.0.4/module.zip",
+  "protected": false,
+  "coreTranslation": false,
+  "library": false
+}

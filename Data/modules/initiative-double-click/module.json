@@ -1,0 +1,39 @@
+{
+    "name": "initiative-double-click",
+    "title": "Initiative Double Click",
+    "description": "Double click the initiative value in the combat tracker to quickly modify it.",
+    "authors": [
+        {
+            "name": "Matheus Clemente",
+            "discord": "mclemente#5524",
+            "ko-fi": "mclemente"
+        },
+        {
+            "name": "KaKaRoTo"
+        }
+    ],
+    "url": "https://github.com/League-of-Foundry-Developers/fvtt-initiative-double-click",
+    "version": "1.6.1",
+    "minimumCoreVersion": "0.8.4",
+    "compatibleCoreVersion": "10",
+    "compatibility": {
+        "minimum": 9,
+        "verified": "10.277"
+    },
+    "esmodules": [
+        "Combat.js"
+    ],
+    "styles": [
+        "initiative.css"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "langs/en.json"
+        }
+    ],
+    "socket": true,
+    "manifest": "https://github.com/League-of-Foundry-Developers/fvtt-initiative-double-click/releases/latest/download/module.json",
+    "download": "https://github.com/League-of-Foundry-Developers/fvtt-initiative-double-click/releases/download/1.6.1/module.zip"
+}

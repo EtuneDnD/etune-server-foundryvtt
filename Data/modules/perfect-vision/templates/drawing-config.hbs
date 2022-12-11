@@ -1,0 +1,127 @@
+<div class="tab" data-tab="perfect-vision.lighting">
+    <p class="notes">{{ localize "PERFECTVISION.DrawingNote" }}</p>
+
+    <div class="form-group perfect-vision">
+        <label>{{ localize "PERFECTVISION.Enabled" }}</label>
+        <div class="form-fields">
+            <input type="checkbox" name="flags.perfect-vision.enabled" {{checked data.flags.perfect-vision.enabled}}>
+        </div>
+        <p class="notes">{{ localize "PERFECTVISION.DrawingEnabledHint" }}</p>
+    </div>
+
+    <div class="form-group perfect-vision">
+        <label>{{ localize "PERFECTVISION.DrawingFit" }}</label>
+        <div class="form-fields">
+            <input type="checkbox" name="flags.perfect-vision.fit" {{checked data.flags.perfect-vision.fit}}>
+        </div>
+        <p class="notes">{{ localize "PERFECTVISION.DrawingFitHint" }}</p>
+    </div>
+
+    <div class="form-group perfect-vision">
+        <label>{{ localize "PERFECTVISION.DrawingPrototype" }}</label>
+        <div class="form-fields">
+            <select name="flags.perfect-vision.prototype" style="font-family: monospace;" data-dtype="String">
+                <option value="{{data.flags.perfect-vision.prototype}}" selected>{{data.flags.perfect-vision.prototype}}
+                </option>
+            </select>
+        </div>
+        <p class="notes">{{ localize "PERFECTVISION.DrawingPrototypeHint" }}</p>
+    </div>
+
+    <hr>
+
+    <div class="form-group perfect-vision">
+        <label>{{ localize "SCENES.FogExplore" }}</label>
+        <div class="form-fields">
+            <input type="checkbox" name="flags.perfect-vision.fogExploration" {{checked
+                data.flags.perfect-vision.fogExploration}}>
+            &nbsp;&nbsp;&nbsp;
+            <label class="checkbox perfect-vision--override">
+                {{ localize "EFFECT.MODE_OVERRIDE" }} <input type="checkbox" class="perfect-vision--override" {{checked
+                    (ne data.flags.perfect-vision.fogExploration undefined)}}>
+            </label>
+        </div>
+        <p class="notes">{{ localize "SCENES.FogExploreHint" }}</p>
+    </div>
+
+    <div class="form-group perfect-vision">
+        <label>{{ localize "PERFECTVISION.RevealFog" }}</label>
+        <div class="form-fields">
+            <input type="checkbox" name="flags.perfect-vision.fogRevealed" {{checked
+                data.flags.perfect-vision.fogRevealed}}>
+            &nbsp;&nbsp;&nbsp;
+            <label class="checkbox perfect-vision--override">
+                {{ localize "EFFECT.MODE_OVERRIDE" }} <input type="checkbox" class="perfect-vision--override" {{checked
+                    (ne data.flags.perfect-vision.fogRevealed undefined)}}>
+            </label>
+        </div>
+        <p class="notes">{{ localize "PERFECTVISION.RevealFogHint" }}</p>
+    </div>
+
+    <div class="form-group perfect-vision">
+        <label>{{ localize "PERFECTVISION.VisionLimitation" }}</label>
+        <div class="form-fields">
+            <button type="button" name="flags.perfect-vision.visionLimitation" class="perfect-vision--button">
+                <i class="fas fa-eye"></i>
+                {{ localize "PERFECTVISION.ConfigureVisionLimitation" }}
+            </button>
+        </div>
+        <p class="notes">{{ localize "PERFECTVISION.VisionLimitationHint" }}</p>
+    </div>
+
+    <hr>
+
+    <div class="form-group perfect-vision">
+        <label>{{ localize "SCENES.GlobalIllum" }}</label>
+        <div class="form-fields">
+            <button type="button" name="flags.perfect-vision.globalLight" class="perfect-vision--button">
+                <i class="fas fa-lightbulb"></i>
+                {{ localize "PERFECTVISION.ConfigureGlobalIllum" }}
+            </button>
+        </div>
+        <p class="notes">{{ localize "PERFECTVISION.GlobalIllumHint" }}</p>
+    </div>
+
+    <div class="form-group perfect-vision">
+        <label>{{ localize "SCENES.Darkness" }}</label>
+        <div class="form-fields">
+            <input type="range" name="flags.perfect-vision.darkness" min="0" max="1" step="0.05"
+                value="{{#if data.flags.perfect-vision.darkness includeZero=true}}{{data.flags.perfect-vision.darkness}}{{else}}0{{/if}}">
+            <span class="range-value" id="perfect-vision.darkness.value">{{#if data.flags.perfect-vision.darkness
+                includeZero=true}}{{data.flags.perfect-vision.darkness}}{{else}}0{{/if}}</span>
+            &nbsp;&nbsp;&nbsp;
+            <label class="checkbox perfect-vision--override">
+                {{ localize "EFFECT.MODE_OVERRIDE" }} <input type="checkbox" class="perfect-vision--override" {{checked
+                    (ne data.flags.perfect-vision.darkness undefined)}}>
+            </label>
+        </div>
+        <p class="notes">{{ localize "SCENES.DarknessHint" }}</p>
+    </div>
+
+    <div class="form-group perfect-vision">
+        <label>{{ localize "PERFECTVISION.DaylightColor" }}</label>
+        <div class="form-fields">
+            {{colorPicker name="flags.perfect-vision.daylightColor" value=data.flags.perfect-vision.daylightColor
+            default=defaults.daylightColor}}
+            &nbsp;&nbsp;&nbsp;
+            <label class="checkbox perfect-vision--override">
+                {{ localize "EFFECT.MODE_OVERRIDE" }} <input type="checkbox" class="perfect-vision--override" {{checked
+                    (ne data.flags.perfect-vision.daylightColor undefined)}}>
+            </label>
+        </div>
+    </div>
+
+    <div class="form-group perfect-vision">
+        <label>{{ localize "PERFECTVISION.DarknessColor" }}</label>
+        <div class="form-fields">
+            {{colorPicker name="flags.perfect-vision.darknessColor" value=data.flags.perfect-vision.darknessColor
+            default=defaults.darknessColor}}
+            &nbsp;&nbsp;&nbsp;
+            <label class="checkbox perfect-vision--override">
+                {{ localize "EFFECT.MODE_OVERRIDE" }} <input type="checkbox" class="perfect-vision--override" {{checked
+                    (ne data.flags.perfect-vision.darknessColor undefined)}}>
+            </label>
+        </div>
+        <p class="notes">{{ localize "PERFECTVISION.IllumColorsHint" }}</p>
+    </div>
+</div>

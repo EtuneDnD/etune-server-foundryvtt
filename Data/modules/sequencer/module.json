@@ -1,0 +1,57 @@
+{
+    "id": "sequencer",
+    "title": "Sequencer",
+    "description": "This module allows you to play effects on the canvas, and create complex sequences of actions",
+    "version": "2.3.21",
+    "library": "false",
+    "manifestPlusVersion": "1.0.0",
+    "minimumCoreVersion": "10",
+    "compatibility": {
+        "minimum": "10",
+        "verified": "10"
+    },
+    "authors": [
+        {
+            "name": "Wasp",
+            "discord": "Wasp#2005",
+            "website": "http://fantasycomputer.works/"
+        }
+    ],
+    "esmodules": [
+        "scripts/module.js"
+    ],
+    "scripts": [
+        "scripts/module/lib/ext/pixi-filters.js"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "languages/en-EN.json"
+        },
+        {
+            "lang": "ja",
+            "name": "日本語",
+            "path": "languages/ja.json"
+        },
+        {
+            "lang": "es",
+            "name": "Español",
+            "path": "languages/es-ES.json"
+        }
+    ],
+    "relationships": {
+        "requires": [
+            {
+                "id": "socketlib",
+                "type": "module"
+            }
+        ]
+    },
+    "socket": true,
+    "url": "https://github.com/fantasycalendar/FoundryVTT-Sequencer",
+    "manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/module.json",
+    "download": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/download/2.3.21/module.zip",
+    "readme": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/blob/master/README.md",
+    "bugs": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/issues"
+}

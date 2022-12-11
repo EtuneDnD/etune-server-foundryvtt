@@ -1,0 +1,33 @@
+{
+  "name": "etune-shared-compendium",
+  "title": "Etune Shared Compendium",
+  "description": "Etune Shared Compendium across worlds and FoundryVTT instances thx to GitHub",
+  "authors": [
+    {
+      "name": "Etune",
+      "url": "https://github.com/AlbertoEE/foundry-todos-module",
+      "discord": "https://discord.gg/X3WCR8dAyC"
+    }
+  ],
+  "version": "1.0.0",
+  "scripts": [
+    "scripts/lib/lib.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "actors",
+      "label": "Etune actors",
+      "path": "etune-shared-compendium-foundry/actors.db",
+      "module": "etune-shared-compendium",
+      "entity": "Actor",
+      "system": "dnd5e"
+    }
+  ]
+}
